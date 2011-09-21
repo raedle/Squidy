@@ -1,0 +1,27 @@
+<assembly>
+	<id>squidy-release-jar</id>
+	<formats>
+		<!-- <format>tar.gz</format>
+		<format>tar.bz2</format> -->
+		<format>dir</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<includes>
+				<include>${project.basedir}/lgpl.txt</include>
+				<include>${project.basedir}/LICENSE</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>{project.build.outputDirectory}</directory>
+		</fileSet>
+	</fileSets>
+	<dependencySets>
+		<dependencySet>
+			<unpack>true</unpack>
+			<scope>runtime</scope>
+		</dependencySet>
+	</dependencySets>
+	
+</assembly>

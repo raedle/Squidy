@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:Data xmlns:ns2="http://hci.uni-konstanz.de/squidy/manager" xmlns:ns3="http://hci.uni-konstanz.de/squidy/common" zoomed-shape="84a73922-dd25-44f0-999b-a4e4188b8b08">
+    <workspace-shape processable-ref="0f84d0f4-757b-4bc6-842d-0dfc7cb30d40" title="Workspace" id="84a73922-dd25-44f0-999b-a4e4188b8b08">
+        <layout-constraint scale="1.0" y="0.0" x="0.0" id="00fbb216-279d-4c13-83f1-4694f5c25060"/>
+        <children>
+            <child xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns5="http://hci.uni-konstanz.de/squidy/designer" xsi:type="ns5:PipelineShape" grid-visible="true" child-scale="1.0" processable-ref="9cbb465a-9126-49d3-9504-65b37e95ca0a" title="Empty Pipeline" id="ecb99654-4b65-4cb4-8eb6-2cff6fa8e484">
+                <layout-constraint scale="0.1" y="457.5576836917558" x="557.4915994623652" id="047507dc-2858-49c9-bea5-9323b3572afc"/>
+                <children/>
+            </child>
+        </children>
+    </workspace-shape>
+    <ns2:workspace id="0f84d0f4-757b-4bc6-842d-0dfc7cb30d40">
+        <sub-processables>
+            <processable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:Pipeline" parent="0f84d0f4-757b-4bc6-842d-0dfc7cb30d40" id="9cbb465a-9126-49d3-9504-65b37e95ca0a">
+                <sub-processables/>
+                <pipes/>
+                <outgoing-pipes/>
+                <incoming-pipes/>
+            </processable>
+        </sub-processables>
+        <pipes/>
+        <outgoing-pipes/>
+        <incoming-pipes/>
+    </ns2:workspace>
+</ns3:Data>

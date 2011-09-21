@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<h3><strong>Short Description</strong></h3>
+<p>The TUIO node is a bridge between Squidy and any hardware device or software that uses the TUIO network protocol to transmit position (DataPosition2D) and token (DataDigital) data. The TUIO node can be used both as sender and receiver of TUIO messages depending on the connected node pin (input, output or both).</p>
+<p><strong>Node Type:</strong> Input and Output</p>
+<p><strong>Receives on Input Pin:</strong> DataPosition2D (for publishing them on network via TUIO)</p>
+<p><strong>Publish on Output Pin:</strong> DataPosition2D (e.g. finger contacts), DataDigital (e.g. true when a Token is detected and false when a Token is lifted)</p>
+<p>&nbsp;</p>
+<h3><strong>Detailed Description  </strong></h3>
+<p><strong>Data Input:</strong></p>
+
+<p> Listens for TUIO Messages with address <em>/tuio/2Dobj, <em>/tuio/2Dcur, /tuio/</em>_sxyXYmaPP or /tuio/</em>_sxyXYma</p>
+<p> /tuio/2Dobj represents a Token</p>
+<p> /tuio/2Dcur represents a Finger Contact </p>
+<p><em>/tuio/</em>_sxyXYmaPP and <em>/tuio/</em>_sxyXYma are custom addresses for handling finger rotation. These are not yet implemented fully.  More information to the TUIO protocol can be found at <a href="http://www.tuio.org/?specification">http://www.tuio.org/?specification</a>    </p>
+<p><strong>Data Output:    </strong></p>
+<p>DataPosition2D's are transformed into TUIO bundles according to their attributes.   For example, if a DataPosition2D has the attribute TUIO_ORIGIN_ADDRESS with a value of /tuio/2Dcur, the DataPosition2D is transformed into a TUIO 2Dcur message.  The TUIO messages are sent via OSC to the port specified through the parameters Remote Address and Remote Port. </p>
+<p>When a /tuio/2Dobj message (a token) arrives, a DataDigital is published to all pipes connected at the outgoing side.   This is to indicate that a token was set down.   The DataDigital has its flag set to true. An additional boolean attribute, TUIO_TOKEN, is attached in order to identify the DataDigital as a token.  When the token was lifted, a DataDigital with flag false is sent.   Publishing of the DataDigitals happens in the methods publishTokenDown() and publishTokenLifted().</p>
+</body>
+</html>

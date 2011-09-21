@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<h3><strong>Short Description</strong></h3>
+<p>The Keyboard node is an Input and Output node. It receives as Input Node key events such as a key press or release on the Input Window (starts automatically). These key events are published as DataKey and also as DataDigital on the Output Pin. The Keyboard node can also be used as an Output node since it emulates key presses on the OS layer when it receives DataKey or DataDigital on the Input Pin. An example for such a keyboard emulation and the corresponding DataKey objects can be seen here...</p><p>Code Sample for Key-Stroke &quot;STRG+S&quot;:</p>
+<p>DataKey key1 = new DataKey(className.getClass(),&quot;Control Key&quot;, KeyEvent.VK_CONTROL, true); <br />
+  publish(key1);<br />
+DataKey key2 = new DataKey(className.getClass(),&quot;Control Key&quot;, KeyEvent.VK_S, true);<br />
+publish(key2);<br />
+DataKey key3 = new DataKey(className.getClass(),&quot;Control Key&quot;, KeyEvent.VK_S, false);<br />
+publish(key3);<br />
+DataKey key4 = new DataKey(className.getClass(),  &quot;Control Key&quot;, KeyEvent.VK_CONTROL, false);<br />
+publish(key4);</p>
+<p>See   <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/awt/event/KeyEvent.html">http://java.sun.com/j2se/1.5.0/docs/api/java/awt/event/KeyEvent.html</a> for a full list of KeyEvent type codes.</p>
+<p>Sometimes it is usefull to give Java a small time between   consecutive  events to process them correctly. This can be done with a Thread.sleep(t)...<br />
+// short break for processing the key event<br />
+try {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Thread.sleep(50);<br />
+} catch (InterruptedException e) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();<br />
+} <br />
+</p>
+<p><strong>Node Type:</strong> Input and Output</p>
+<p><strong>Receives on Input Pin:</strong> DataKey, DataDigital</p>
+<p><strong>Publish on Output Pin:</strong>   DataKey, DataDigital</p>
+<p>&nbsp;</p>
+<h3><strong>Detailed Description  </strong></h3>
+<p><strong>Data Input:</strong></p>
+
+<p> tbd.</p>
+<p><strong>Data Output:    </strong></p>
+<p>tbd.</p></body>
+</html>

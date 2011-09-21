@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faqs title="Frequently Asked Questions" toplink="false">
+
+  <part id="general">
+    <title>General</title>
+
+    <faq id="what-is-squidy">
+      <question>
+        What is Squidy?
+      </question>
+      <answer>
+        <p>Squidy is an interaction library which eases the design of natural user interfaces (also known as "post-WIMP interfaces") by unifying various device drivers, frameworks and tracking toolkits in a common library and providing a central and easy-to-use visual design environment.</p>
+      </answer>
+    </faq>
+
+    <faq id="license">
+      <question>
+        Under which license does the Squidy Interaction Library appear?
+      </question>
+      <answer>
+        <p>Squidy Interaction Library is free software: you can redistribute it and/or
+modify it under the terms of the <a href="license.html">GNU Lesser General Public License</a> as
+published by the Free Software Foundation, either version 3 of the License,
+or (at your option) any later version.
+<br/>
+Squidy Interaction Library is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+<br/>
+For more details about the license and license FAQ, please visit the <a href="http://www.gnu.org/copyleft/lesser.html">GNU LGPL site</a>.
+</p>
+      </answer>
+    </faq>
+    
+    <faq id="more-information">
+      <question>
+        Where can I find more information about the Squidy Interaction Library?
+      </question>
+      <answer>
+        <p>For more information, please visit the <a href="http://www.squidy-lib.de">Squidy Interaction Library website</a>.</p>
+      </answer>
+    </faq>
+  </part>
+
+  <part id="install">
+
+    <title>Download &amp; Installation</title>
+
+    <faq id="where-download">
+      <question>
+        Where can I download the Squidy Interaction Library?
+      </question>
+      <answer>
+        <p>You can download the latest release of Squidy on our <a href="http://downloads.sourceforge.net/squidy-lib">SourceForge.net site</a>.</p>
+      </answer>
+    </faq>
+    
+    <faq id="how-install">
+      <question>
+        How do I install the Squidy Interaction Library?
+      </question>
+      <answer>
+        <p>For installation instructions, please visit the <a href="http://merkur61.inf.uni-konstanz.de:8080/confluence/display/DEV/Getting+Started">Getting Started</a> section of our <a href="http://confluence.squidy-lib.de">Squidy Interaction Library Wiki</a></p>
+      </answer>
+    </faq>
+
+  </part>
+
+</faqs>

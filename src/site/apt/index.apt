@@ -1,0 +1,21 @@
+Welcome to Squidy Interaction Library
+ 
+  Squidy is an interaction library which eases the design of natural user interfaces (also known as "post-WIMP interfaces") by unifying various device drivers, frameworks and tracking toolkits in a common library and providing a central and easy-to-use visual design environment. Squidy offers diverse input modalities such as multi-touch input, pen interaction, speech recognition, laser pointer-, eye- and gesture-tracking. The visual user interface hides the complexity of the technical implementation from the user by providing a simple visual language based on high-level visual data flow programming combined with zoomable user interface concepts. Furthermore, Squidy offers a collection of ready-to-use devices, signal processing filters and interaction techniques. The trade-off between functionality and simplicity of the user interface is especially addressed by utilizing the concept of semantic zooming which enables dynamic access to more advanced functionality on demand. Thus, developers as well as interaction designers are able to adjust the complexity of the Squidy user interface to their current need and knowledge. The interaction library Squidy was developed in course of the research project {{{http://hci.uni-konstanz.de/intehrdis}inteHRDis - Interaction Techniques for High Resolution Displays}}.
+ 
+  Here are some useful links to get you started:
+ 
+   * {{{http://www.squidy-lib.de}Squidy Research Website}}
+ 
+   * {{{http://wiki.squidy-lib.de}Squidy Wiki}}
+
+   * {{{features.html}Features}}
+ 
+   * {{{faq.html}FAQ}}
+
+  Development relevant links:
+
+   * {{{http://svn.squidy-lib.de}Subversion Repository}}
+
+   * {{{http://bug.squidy-lib.de}Issue Tracking}}
+
+   * {{{http://bamboo.squidy-lib.de}Continuous Integration}}

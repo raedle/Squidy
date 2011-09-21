@@ -1,0 +1,13 @@
+Squidy Key Features
+ 
+   * <<Multi-threading:>> The possibility for multiple in and out connections provides a high flexibility and the potential for massive parallel execution of concurrent nodes. Each node generates its own thread and processes its data independently as soon as it arrives. This effectively reduces the processing delay that could have a negative effect on the interaction performance. 
+
+   * <<Reusability & comparability:>> Nodes are completely independent components, offer high reuse, are free from side effects, and can be activated separately e.g. for comparative evaluations. 
+
+   * <<Less demanding:>> Semantic zooming enables users to adjust the complexity of the user interface to their current need. Moreover, users may use filters and devices as 'black boxes' without any knowledge of the technical details and thus concentrate on the design. 
+
+   * <<Dataflow visualization:>> The visual inspection of the current dataflow helps to identify possible issues and facilitates fast error correction at runtime. 
+
+   * <<Interactive configuration:>> Changes in the dataflow and configuration of node parameters are instantly applied and thereby can change the interaction. This supports fast and interactive design iterations. 
+
+   * <<Visual interaction design:>> The pipe-and-filter concept augmented with semantic zooming offers a very simple, but powerful visual language for the design and development of natural user interfaces.

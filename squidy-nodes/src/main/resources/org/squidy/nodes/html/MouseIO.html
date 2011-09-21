@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<h3><strong>Short Description</strong></h3>
+<p>The Mouse I/O node is an Input and Output node. It receives as Input Node mouse events such as a mouse movements and mouse clicks on the Input Window (starts automatically). These mouse events are published as DataPosition2D and also as DataButton on the Output Pin. The Mouse I/O node can also be used as an Output node since it emulates mouse movements and button presses on the OS layer when it receives DataPosition2D or DataButton on the Input Pin. An example for such a mouse emulation and the corresponding DataButton objects can be seen here...</p>
+<p><strong>Code Sample </strong>for a left mouse click on Position P(x/y):</p>
+<p>DataPosition2D dataPosition2D = new DataPosition2D(className.class, &quot;mouse&quot;, x, y);<br />
+publish(dataPosition2D);<br />
+DataButton leftButtonPressed = new DataButton(className.class, &quot;mouse left  button click&quot;, DataButton.BUTTON_1, true));<br />
+publish(leftButtonPressed);<br />
+  DataButton leftButtonReleased = new DataButton(className.class, &quot;mouse left  button click&quot;, DataButton.BUTTON_1, false));<br />
+  publish(leftButtonReleased);<br />
+  <br />
+  Sometimes it is usefull to give Java a small time between   consecutive  events to process them correctly. This can be done with a Thread.sleep(t)...<br />
+  // short break for processing the mouse event<br />
+try {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Thread.sleep(50);<br />
+} catch (InterruptedException e) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();<br />
+}  <br />
+</p>
+<p><strong>Button Types: </strong><br />
+  DataButton.BUTTON_1: left mouse button: 
+<br />
+DataButton.BUTTON_2: middle mouse button: 
+<br />
+DataButton.BUTTON_3: right mouse button:</p>
+<p><strong>Node Type:</strong> Input and Output</p>
+<p><strong>Receives on Input Pin:</strong> DataPosition2D, DataButton</p>
+<p><strong>Publish on Output Pin:</strong> DataPosition2D, DataButton</p>
+<p>&nbsp;</p>
+<h3><strong>Detailed Description  </strong></h3>
+<p><strong>Data Input:</strong></p>
+
+<p> tbd.</p>
+<p><strong>Data Output:    </strong></p>
+<p>tbd.</p></body>
+</html>

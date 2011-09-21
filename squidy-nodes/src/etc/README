@@ -1,0 +1,70 @@
+### LICENSE ###
+
+	Squidy Interaction Library is free software: you can redistribute it and/or
+	modify it under the terms of the GNU Lesser General Public License as
+	published by the Free Software Foundation, either version 3 of the License,
+	or (at your option) any later version.
+	
+	Squidy Interaction Library is distributed in the hope that it will be
+	useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+	
+	You should have received a copy of the GNU Lesser General Public License
+	along with Squidy Interaction Library. If not, see
+	<http://www.gnu.org/licenses/>.
+	
+	2009 Human-Computer Interaction Group, University of Konstanz.
+	<http://hci.uni-konstanz.de>
+	
+	Please contact info@squidy-lib.de or visit our website
+	<http://www.squidy-lib.de> for further information.
+	
+### GETTING STARTED ###
+
+	In order to run the Squidy Interaction Library, please use one of the
+	provided batch-files.
+	
+	When running Squidy, you can zoom in and out of nodes by doubleclicking
+	either a node (zoom in) or the area around a node (zoom out).
+	
+	### Demo Pipeline ###
+	
+	- startSquidy_Demo.bat / startSquidy_Demo.sh: This will start the
+	  Squidy Interaction Library with two example pipelines that works in
+	  combination with the Squidy iPhone Client or as simple mouse input.
+	  
+	- The Squidy iPhone Client can be retrieved for free via Apple's App Store
+	  by searching for "Squidy".
+	  
+	- To run the demo, please make sure that your PC and your iPhone use the
+	  same wireless / internet connection. On your iPhone, go to 'Settings' ->
+	  'Squidy Client' and enter the IP of you PC as host.
+	  
+	- Run both the Squidy App on your iPhone and the pipeline on your PC
+	
+	- You will now be able to control your PC mouse via your iPhone. You can
+	  furthermore control Powerpoint presentations by swiping to the right /
+	  left in order to access the next / previous slide (Swiping maps to the
+	  Page Up / Page Down keys on your PC). Swiping from top to bottom or from
+	  bottom to top maps to a right click.
+	  
+	### Empty Pipeline ###
+	
+	- startSquidy_Empty.bat / startSquidy_Empty.sh: This will start the Squidy
+	  Interaction Library with an empty pipeline.
+	  
+	- You can add new nodes via the bottom toolbar. Additional nodes are
+	  available in the Squidy Knowledge Base.
+
+### FURTHER INFORMATION ###
+
+	For further information, please visit our website at
+	<http://www.squidy-lib.de>
+
+### CONTACT ###
+
+	If you have any questions or suggestions concerning the Squidy Interaction
+	Library, please feel free to contact us via <info@squidy-lib.de>
+	
+We hope you will enjoy working with the Squidy Interaction Library. Have Fun!

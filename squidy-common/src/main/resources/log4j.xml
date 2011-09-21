@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Log4j Configuration                                                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+   <!-- ============================== -->
+   <!-- Append messages to the console -->
+   <!-- ============================== -->
+
+   <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+     <param name="Target" value="System.out"/>
+     
+     <!-- Uncomment if you wan't to use log level for all loggings.
+     <param name="Threshold" value="DEBUG"/>
+     -->
+     
+     <layout class="org.apache.log4j.PatternLayout">
+       <param name="ConversionPattern" value="%d{ISO8601} %-5p [%t] %c: %m%n" />
+     </layout>
+   </appender>
+
+   <!-- ================ -->
+   <!-- Limit categories -->
+   <!-- ================ -->
+   
+   <category name="de.ukn.hci.squidy">
+      <priority value="DEBUG"/>
+   </category>
+   
+   <category name="de.ukn.hci.squidy.manager">
+      <priority value="DEBUG"/>
+   </category>
+   
+   <category name="de.ukn.hci.squidy.designer">
+      <priority value="DEBUG"/>
+   </category>
+   
+   <category name="motej">
+      <priority value="INFO"/>
+   </category>
+
+   <!-- ======================= -->
+   <!-- Setup the Root category -->
+   <!-- ======================= -->
+
+  <root>
+    <priority value="INFO" />
+    <appender-ref ref="CONSOLE" />
+  </root>
+
+</log4j:configuration>

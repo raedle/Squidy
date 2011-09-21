@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<h3><strong>Short Description</strong></h3>
+<p>The PhidgetInterfaceKit node is a driver for the Phidget microcontroller boards   <a href="http://www.phidgets.com/">http://www.phidgets.com/</a>. The node reads out sensor values of the connected sensors and publish them as DataAnalog objects on the Output Pin. On the Input Pin the status of connected LEDs or actuators can be set with DataDigital objects and specific attribute settings.</p>
+<p>Code Sample for setting led on sensor pin 0 on microcontroller on true:<br />
+DataDigital digital = new DataDigital(className.class, "led pin", true); <br />
+digital.setAttribute(DataConstant.SENSOR_OUTPUT_INDEX, 0); <br />
+publish(digital);
+</p>
+<p><strong>Node Type:</strong> Input and Output</p>
+<p><strong>Receives on Input Pin:</strong> DataDigital (to set a specififc pin on the microcontroller e.g. to control LEDs)</p>
+<p><strong>Publish on Output Pin:</strong> DataAnalog (values of a connected sensor)</p>
+<p>&nbsp;</p>
+<h3><strong>Detailed Description  </strong></h3>
+<p><strong>Data Input:</strong></p>
+
+<p> tbd.</p>
+<p><strong>Data Output:    </strong></p>
+<p>tbd.</p></body>
+</html>

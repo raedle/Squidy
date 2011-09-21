@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Squidy Interaction Library">
+ 
+	<skin>
+		<groupId>de.ukn.hci.squidy</groupId>
+		<artifactId>squidy-site-skin</artifactId>
+		<version>1.0.1</version>
+	</skin>
+
+	<publishDate position="left"/>
+	<version position="left"/>
+
+	<bannerLeft>
+		<name>Squidy</name>
+		<src>./images/squidy-logo.png</src>
+		<href>http://www.squidy-lib.de/</href>
+	</bannerLeft>
+	<!--
+		<bannerRight> <src>./images/poweredby_squidy.png</src> </bannerRight>
+	-->
+	<poweredBy>
+		<logo name="Squidy" href="http://www.squidy-lib.de" img="./images/poweredby_squidy.png" />
+		<logo name="Maven" href="http://maven.apache.org/" img="http://maven.apache.org/images/logos/maven-feather.png" />
+		<logo name="JIRA" href="http://www.atlassian.com/software/jira" title="Atlassian JIRA" border="0" width="80" height="25" alt="Atlassian JIRA" img="http://www.atlassian.com/software/jira/images/badges/v1/sm_jira.png" />
+		<logo name="Confluence" href="http://www.atlassian.com/software/confluence" title="Atlassian Confluence" border="0" width="80" height="25" alt="Atlassian Confluence" img="http://www.atlassian.com/software/confluence/images/badges/v1/sm_confluence.png" />
+		<logo name="Bamboo" href="http://www.atlassian.com/software/bamboo" title="Atlassian Bamboo" border="0" width="80" height="25" alt="Atlassian Bamboo" img="http://www.atlassian.com/software/bamboo/images/badges/v1/sm_bamboo.png" />
+		<logo name="Crowd" href="http://www.atlassian.com/software/crowd" title="Atlassian Crowd" border="0" width="80" height="25" alt="Atlassian Crowd" img="http://www.atlassian.com/software/crowd/images/badges/v1/sm_crowd.png" />
+		<logo name="SourceForge.net" href="http://sourceforge.net/projects/squidy-lib" title="Get Squidy Interaction Library at SourceForge.net. Fast, secure and Free Open Source software downloads" width="80" height="15" img="http://sflogo.sourceforge.net/sflogo.php?group_id=272406&amp;type=10" />
+		<logo name="techsparked" href="http://techsparked.com/aff/50/9" title="techsparked" border="0" width="80" img="http://techsparked.com/sites/default/files/affiliates/affiliate-89-32_light.png" />
+		<logo name="Softpedia 100% FREE Award" href="http://mac.softpedia.com/progClean/Squidy-Interaction-Library-Clean-68982.html" title="Softpedia 100% FREE Award" border="0" width="120" alt="Softpedia 100% FREE Award" img="./images/softpedia_free_award_f.gif" />
+	</poweredBy>
+	
+	<body>
+		<links>
+			<item name="Squidy Interaction Library" href="http://www.squidy-lib.de/" />
+			<item name="Human-Computer Interaction Group" href="http://hci.uni-konstanz.de/" />
+		</links>
+
+		<menu name="Overview">
+			<item name="Introduction" href="index.html" />
+			<item name="Features" href="features.html" />
+			<item name="Download" href="download.html" />
+			<!--<item name="Release Notes" href="release-notes.html" />-->
+			<!--<item name="General Information" href="about.html" />-->
+			<!--<item name="Road Map" href="roadmap.html" />-->
+			<item name="FAQ" href="faq.html" />
+		</menu>
+
+		<menu ref="parent" />
+
+		<!--<menu ref="modules" />-->
+
+		<menu ref="reports" />
+
+	</body>
+</project>

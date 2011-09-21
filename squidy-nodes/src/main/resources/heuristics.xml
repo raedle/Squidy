@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<heuristics:heuristics xmlns:heuristics="http://hci.uni-konstanz.de/squidy/heuristics">
+	<default-heuristic>
+		<match processor-type="INPUT" type="org.squidy.nodes.MouseIO" index="0"/>
+		<match processor-type="INPUT" type="org.squidy.nodes.iPhone" index="1"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.SquidyRemote" index="2"/>
+		<!--
+		<match processor-type="OUTPUT" type="org.squidy.nodes.TUIO" index="3"/>
+		-->
+		<!--
+		<match processor-type="INPUT" type="org.squidy.nodes.MultiTouch" index="3"/>
+		-->
+		<!--
+		<match processor-type="INPUT" type="org.squidy.nodes.Wiimote" index="4"/>
+		-->
+		<match processor-type="FILTER" type="org.squidy.nodes.Kalman" index="5"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="6"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.FlipHorizontal2D" index="7"/>
+	</default-heuristic>
+	<heuristic type="org.squidy.nodes.iPhone">
+		<match processor-type="FILTER" type="org.squidy.nodes.GestureRecognizer" index="0"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="0"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.Kalman" index="2"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.ScreenDispatcher" index="3"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.FlipHorizontal2D" index="4"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.FlipVertical2D" index="5"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.Kalman">
+		<match processor-type="FILTER" type="org.squidy.nodes.ContactGestures" index="1"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.EasyClick" index="2"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="3"/>
+	</heuristic>
+    <heuristic type="org.squidy.nodes.Laserpointer">
+        <match processor-type="FILTER" type="org.squidy.nodes.Kalman" index="1"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="2"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.TUIO" index="3"/>
+    </heuristic>
+	<heuristic type="org.squidy.nodes.ContactGestures">
+		<match processor-type="OUTPUT" type="org.squidy.nodes.TUIO" index="0"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.FlipHorizontal2D" index="2"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.ScreenDispatcher">
+		<match processor-type="FILTER" type="org.squidy.nodes.ContactGestures" index="0"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="1"/>
+        <match processor-type="FILTER" type="org.squidy.nodes.Kalman" index="3"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.EasyClick">
+		<match processor-type="OUTPUT" type="org.squidy.nodes.TUIO" index="0"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="1"/>
+        <match processor-type="FILTER" type="org.squidy.nodes.DigitalChanged" index="2"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.DigitalChanged">
+		<match processor-type="FILTER" type="org.squidy.nodes.EasyClick" index="0"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.TUIO" index="1"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.ReacTIVision" index="2"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="3"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.MouseIO">
+		<match processor-type="FILTER" type="org.squidy.nodes.ScreenDispatcher" index="3"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.FlipHorizontal2D" index="0"/>
+		<match processor-type="FILTER" type="org.squidy.nodes.FlipVertical2D" index="1"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.TUIO" index="2"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="3"/>
+	</heuristic>
+	<!--
+	<heuristic type="org.squidy.nodes.FlipVertical2D">
+		<match processor-type="FILTER" type="org.squidy.nodes.FlipHorizontal2D" index="0"/>
+		<match processor-type="OUTPUT" type="org.squidy.nodes.TUIO" index="2"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="3"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.ARTracking">
+		<match processor-type="FILTER" type="org.squidy.nodes.TokenRecognizer" index="0"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="1"/>
+        <match processor-type="FILTER" type="org.squidy.nodes.DigitalChanged" index="2"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.TokenRecognizer">
+		<match processor-type="OUTPUT" type="org.squidy.nodes.Touchlib" index="0"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="1"/>
+        <match processor-type="FILTER" type="org.squidy.nodes.DigitalChanged" index="2"/>
+	</heuristic>
+	<heuristic type="org.squidy.nodes.Touchlib">
+		<match processor-type="OUTPUT" type="org.squidy.nodes.FlipVertical2D" index="0"/>
+        <match processor-type="OUTPUT" type="org.squidy.nodes.MouseIO" index="1"/>
+        <match processor-type="FILTER" type="org.squidy.nodes.DigitalChanged" index="2"/>
+	</heuristic>
+	-->
+</heuristics:heuristics>

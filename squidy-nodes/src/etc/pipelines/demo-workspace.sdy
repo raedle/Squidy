@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:Data xmlns:ns2="http://hci.uni-konstanz.de/squidy/manager" xmlns:ns3="http://hci.uni-konstanz.de/squidy/common" zoomed-bounds="317.66681838243323,443.8999400033098,140.00000000000227,110.00000000000227">
+    <workspace-shape processable-ref="c56bb8db-c285-4cb4-b2e6-31c951a6ea57" title="Squidy Demo" id="989c797c-906a-4c20-8705-abfad33e7b71">
+        <layout-constraint scale="1.0" y="0.0" x="0.0" id="36dd9011-74c3-4c7a-93ed-a1e72054f197"/>
+        <children>
+            <child xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns5="http://hci.uni-konstanz.de/squidy/designer" xsi:type="ns5:PipelineShape" grid-visible="true" child-scale="1.0" processable-ref="aee1faa9-f8da-402d-84d3-171bbf912018" title="Mobile Squidy Presenter" id="70a04c4b-cf54-4128-9597-d299fd461808">
+                <layout-constraint scale="0.1" y="448.8999400033109" x="322.66681838243437" id="addc7848-49f1-4120-8d9b-92558efcfd88"/>
+                <children>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="3f4b05d9-5178-4f96-ae1d-da924427e586" title="iPhone" id="91815c3d-1b60-4bed-ab44-98f0df20d481">
+                        <layout-constraint scale="0.1" y="135.60763888887234" x="91.82986111111018" id="7e9b4893-ceaa-4444-b277-c90e63c562e2"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c" title="SquidyPresenter" id="b9cae593-3125-4f9c-a25c-a57408daccc0">
+                        <layout-constraint scale="0.1" y="429.48322105786974" x="542.7296448769175" id="3f09b152-c209-4cbc-8ced-2d8f9d913165"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="d8649f4d-d66e-425f-b363-cc77bbb59040" title="Android" id="8e656aa0-8306-4583-9ad7-c9c0f299d117">
+                        <layout-constraint scale="0.1" y="712.934027777769" x="84.67648037257871" id="250cd5e7-a76a-4548-ae4d-d26df2bebdd6"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="b9cae593-3125-4f9c-a25c-a57408daccc0" source="8e656aa0-8306-4583-9ad7-c9c0f299d117" pipe-ref="6514898d-68e5-470f-9de6-a46f44efb9e6" id="b012d71d-65e2-4c5b-a659-739182fc2884">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="20626ea9-7b51-4ced-8015-43258bf6bae1"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="b9cae593-3125-4f9c-a25c-a57408daccc0" source="91815c3d-1b60-4bed-ab44-98f0df20d481" pipe-ref="89196cfd-0dea-4b35-90c0-45f54a0751f1" id="b53cf6c0-7bb4-49b9-9c16-32d03a06eb1c">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="994104e0-a38d-49f8-bb62-41fa3f25b629"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipelineShape" grid-visible="true" child-scale="1.0" processable-ref="5ac72762-37a5-4e4c-8357-71af346fa998" title="Mouse &amp; Keyboard" id="6453656a-1c85-4ab0-9981-fedd6bfe2443">
+                        <layout-constraint scale="0.1" y="430.2594810379141" x="1034.267215568861" id="f6f107c9-3a4e-4c19-b49a-f5e3e11691a1"/>
+                        <children>
+                            <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="5e9fb6a2-61bd-43ac-b2d1-348f6ac23054" title="Kalman" id="b4a71e1c-7909-4676-8175-eca0d8f50edd">
+<layout-constraint scale="0.1" y="209.6007984032522" x="280.9496007984179" id="65aa17f7-7acb-431a-88ca-dbe0a1e111af"/>
+<children/>
+                            </child>
+                            <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="9bfdbffe-403e-4be8-a537-97691245af89" title="Mouse I/O" id="26a4b080-632f-4fa0-9263-d375b06eff94">
+<layout-constraint scale="0.1" y="208.50299401203463" x="770.3817365269516" id="7adb4506-e896-46a5-a525-0dbe857ea522"/>
+<children/>
+                            </child>
+                            <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="04200a69-d9f0-46fc-97b3-6bb8b0d07adc" title="Keyboard" id="ce51fc4d-ef23-41b8-af70-1a695df43385">
+<layout-constraint scale="0.1" y="632.8343313372897" x="276.74650698599964" id="db0f85d3-54fa-444c-8075-5db17f06f756"/>
+<children/>
+                            </child>
+                            <child xsi:type="ns5:PipeShape" target="b4a71e1c-7909-4676-8175-eca0d8f50edd" source="6453656a-1c85-4ab0-9981-fedd6bfe2443" pipe-ref="56d592ad-d544-401c-857f-f4dff25b5ee9" id="a123b43e-d924-4d62-be15-b302b2910047">
+<layout-constraint scale="0.1" y="-0.0" x="-0.0" id="315c5800-a47d-43d1-b425-f93d1057fe8e"/>
+<children/>
+                            </child>
+                            <child xsi:type="ns5:PipeShape" target="26a4b080-632f-4fa0-9263-d375b06eff94" source="b4a71e1c-7909-4676-8175-eca0d8f50edd" pipe-ref="67a0c33a-34b6-4331-bef4-9162e7026168" id="828015eb-6beb-499d-b89e-c462638281be">
+<layout-constraint scale="0.1" y="-0.0" x="-0.0" id="ff95807a-a50b-46b4-b75a-47d090a9c54d"/>
+<children/>
+                            </child>
+                            <child xsi:type="ns5:PipeShape" target="ce51fc4d-ef23-41b8-af70-1a695df43385" source="6453656a-1c85-4ab0-9981-fedd6bfe2443" pipe-ref="0a104b63-381e-442b-b60c-5697a323d4a3" id="b5e006b6-3089-4fb5-9fe4-edacf0202a9c">
+<layout-constraint scale="0.1" y="-0.0" x="-0.0" id="cef77ae5-4f54-4970-8c56-9f2eebf77922"/>
+<children/>
+                            </child>
+                        </children>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="6453656a-1c85-4ab0-9981-fedd6bfe2443" source="b9cae593-3125-4f9c-a25c-a57408daccc0" pipe-ref="64a34b64-413c-4f91-b5cf-213473659dad" id="a079655e-4958-4d0a-a561-d1cc37e23d38">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="d58307c7-6c5a-4386-a1b7-13d252e18844"/>
+                        <children/>
+                    </child>
+                </children>
+            </child>
+            <child xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns5="http://hci.uni-konstanz.de/squidy/designer" xsi:type="ns5:PipelineShape" grid-visible="true" child-scale="1.0" processable-ref="aee1faa9-f8da-402d-84d3-171bbf912019" title="MultiTouch and Token Recognition" id="70a04c4b-cf54-4128-9597-d299fd461809">
+                <layout-constraint scale="0.1" y="449.5943844477546" x="819.3682072713248" id="addc7848-49f1-4120-8d9b-92558efcfd89"/>
+                <children>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="e730cac9-9309-4142-b6d5-4b5c2b70e782" title="Multi-Touch" id="24b2f483-5e9b-40ad-8f21-f9ff3b3e8047">
+                        <layout-constraint scale="0.1" y="205.90277777776228" x="41.75347222220508" id="7adad6fe-427d-48a9-b7f5-d632b045cee4"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="bb2bfcd7-29f4-4faf-9e34-3211ca6a000e" title="reacTIVision" id="078ca95f-ecfd-487d-bb70-1980f5898e96">
+                        <layout-constraint scale="0.1" y="669.0104166666597" x="40.79861111109396" id="4dac33ae-8b91-4b7a-bae3-e2caca62fd0e"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="876280aa-82e8-42c4-9e65-35551a6b5b79" title="Kalman" id="e29cc849-f28e-4542-a163-6f33a6d8d8a3">
+                        <layout-constraint scale="0.1" y="206.2673611110976" x="426.3229166666634" id="93a22425-6d0c-4a91-a944-d52b7840b285"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="15320023-0f34-4408-8146-c0c3e6b40ec7" title="TUIO" id="8bc10e0c-789d-4f1c-aeaf-140756965aa6">
+                        <layout-constraint scale="0.1" y="668.055555555548" x="1129.340277777781" id="54c40d21-175a-49a2-bde3-b3dba4093ce6"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="9386f072-06d6-4284-a886-ed980ab39b86" title="TUIO" id="99db8814-b527-499c-9531-09f4fdf96fb5">
+                        <layout-constraint scale="0.1" y="203.9930555555399" x="1130.2951388888914" id="aa72eca3-d3c6-4074-aa84-34242ba16d60"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="e29cc849-f28e-4542-a163-6f33a6d8d8a3" source="24b2f483-5e9b-40ad-8f21-f9ff3b3e8047" pipe-ref="bb9da2bf-d348-4444-819b-490c899f0cf1" id="c16a4534-638d-47d1-be6c-50b34d55482b">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="d34bb165-939e-42f6-aba1-f5dfdf389a8d"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="263c67aa-ed48-4d6b-8959-4b3079487408" title="ResolutionFilter" id="f3bfea29-aa53-42ff-b14b-7581f38ac235">
+                        <layout-constraint scale="0.1" y="203.99305555553977" x="785.5902777777756" id="f897fa63-5b77-4062-9fb0-4556e44f2849"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="f3bfea29-aa53-42ff-b14b-7581f38ac235" source="e29cc849-f28e-4542-a163-6f33a6d8d8a3" pipe-ref="43f38224-cde0-4846-86f9-3059143c8352" id="72e6448b-2dc6-4ad4-b6c8-66c2cd97d3d3">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="ee8070ec-b7c4-4544-a5f2-b3f674c48b17"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="99db8814-b527-499c-9531-09f4fdf96fb5" source="f3bfea29-aa53-42ff-b14b-7581f38ac235" pipe-ref="3a2f892f-8aae-42fe-9fe0-f83616365197" id="2a662cdc-5ab3-4b66-8c8c-5da7574c5ccc">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="e57ddfc6-4163-4324-9f76-e75f1283d981"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="ab69708b-0447-43ce-854d-39c2cb3523d9" title="Rotation Median" id="8e484b6e-ad5c-41d0-9141-fa8ee014ab73">
+                        <layout-constraint scale="0.1" y="669.0104166666603" x="786.5451388888871" id="a29dc513-ed68-4480-8588-c2cbd71dfc33"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="8bc10e0c-789d-4f1c-aeaf-140756965aa6" source="8e484b6e-ad5c-41d0-9141-fa8ee014ab73" pipe-ref="433b8fe6-f4c7-4de0-a977-01b1efddd95f" id="f6b2b8d6-c825-40de-acd6-1fb1d894b3ab">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="a50ff235-aa85-4b9d-bd86-0b4bbe343902"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:NodeShape" grid-visible="false" child-scale="1.0" processable-ref="447c57c1-d24e-4c5e-b169-1b3585516b6b" title="Kalman" id="79cc6b70-257d-4120-b521-5b36a9bededf">
+                        <layout-constraint scale="0.1" y="667.1006944444383" x="424.65277777776834" id="3de8488d-aab6-4f52-b14e-526adf90f38e"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="79cc6b70-257d-4120-b521-5b36a9bededf" source="078ca95f-ecfd-487d-bb70-1980f5898e96" pipe-ref="1d42faf4-4548-4f52-9623-e03ecb791fc1" id="1b2bf43d-543f-4cee-81f3-a693fb4ef006">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="cd2b2e5a-a2f0-4b10-9799-78d676a0920b"/>
+                        <children/>
+                    </child>
+                    <child xsi:type="ns5:PipeShape" target="8e484b6e-ad5c-41d0-9141-fa8ee014ab73" source="79cc6b70-257d-4120-b521-5b36a9bededf" pipe-ref="559e6920-0142-4683-822f-ceec2f45f507" id="1f70e251-a084-427f-9078-f20467536aa7">
+                        <layout-constraint scale="0.1" y="-0.0" x="-0.0" id="b947668c-1235-4f93-a6f3-61feffdd3dec"/>
+                        <children/>
+                    </child>
+                </children>
+            </child>
+        </children>
+    </workspace-shape>
+    <ns2:workspace id="c56bb8db-c285-4cb4-b2e6-31c951a6ea57">
+        <sub-processables>
+            <processable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:Pipeline" parent="c56bb8db-c285-4cb4-b2e6-31c951a6ea57" id="aee1faa9-f8da-402d-84d3-171bbf912018">
+                <sub-processables>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:Apple iPhone / iPod Touch" should-release-buttons="true" port="1919" service-name="Squidy iPhone" parent="aee1faa9-f8da-402d-84d3-171bbf912018" id="3f4b05d9-5178-4f96-ae1d-da924427e586">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c" source="3f4b05d9-5178-4f96-ae1d-da924427e586" id="89196cfd-0dea-4b35-90c0-45f54a0751f1">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>89196cfd-0dea-4b35-90c0-45f54a0751f1</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes/>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:SquidyPresenter" time-threshold="500" movement-threshold="30" parent="aee1faa9-f8da-402d-84d3-171bbf912018" id="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="5ac72762-37a5-4e4c-8357-71af346fa998" source="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c" id="64a34b64-413c-4f91-b5cf-213473659dad">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>64a34b64-413c-4f91-b5cf-213473659dad</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes>
+                            <incomingPipes>6514898d-68e5-470f-9de6-a46f44efb9e6</incomingPipes>
+                            <incomingPipes>89196cfd-0dea-4b35-90c0-45f54a0751f1</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:Android" should-release-buttons="true" port="2020" service-name="Squidy Android" parent="aee1faa9-f8da-402d-84d3-171bbf912018" id="d8649f4d-d66e-425f-b363-cc77bbb59040">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c" source="d8649f4d-d66e-425f-b363-cc77bbb59040" id="6514898d-68e5-470f-9de6-a46f44efb9e6">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>6514898d-68e5-470f-9de6-a46f44efb9e6</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes/>
+                    </processable>
+                    <processable xsi:type="ns2:Pipeline" parent="aee1faa9-f8da-402d-84d3-171bbf912018" id="5ac72762-37a5-4e4c-8357-71af346fa998">
+                        <sub-processables>
+                            <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:Kalman" smoothing-range-vertical="1" smoothing-range-horizontal="1" smoothing-subpixels="false" maximum-timeout="150" maximum-distance-multi-point="4" maximum-distance-single-point="50" pv-noise="80.0" p-noise="30000" m-noise="80" frame-rate="100" mode="1" parent="5ac72762-37a5-4e4c-8357-71af346fa998" id="5e9fb6a2-61bd-43ac-b2d1-348f6ac23054">
+<sub-processables/>
+<pipes>
+    <pipe target="9bfdbffe-403e-4be8-a537-97691245af89" source="5e9fb6a2-61bd-43ac-b2d1-348f6ac23054" id="67a0c33a-34b6-4331-bef4-9162e7026168">
+        <sub-processables/>
+        <input-types>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+            <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+        </input-types>
+        <output-types>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+            <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+        </output-types>
+    </pipe>
+</pipes>
+<outgoing-pipes>
+    <outgoingPipes>67a0c33a-34b6-4331-bef4-9162e7026168</outgoingPipes>
+</outgoing-pipes>
+<incoming-pipes>
+    <incomingPipes>56d592ad-d544-401c-857f-f4dff25b5ee9</incomingPipes>
+</incoming-pipes>
+                            </processable>
+                            <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:MouseIO" directinput="false" origin-offset-y="0.0" origin-offset-x="0.0" manual-height="768.0" manual-width="1024.0" manual="false" open-input-window="false" middle-double-click="false" parent="5ac72762-37a5-4e4c-8357-71af346fa998" id="9bfdbffe-403e-4be8-a537-97691245af89">
+<sub-processables/>
+<pipes/>
+<outgoing-pipes/>
+<incoming-pipes>
+    <incomingPipes>67a0c33a-34b6-4331-bef4-9162e7026168</incomingPipes>
+</incoming-pipes>
+                            </processable>
+                            <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:Keyboard" open-input-window="false" parent="5ac72762-37a5-4e4c-8357-71af346fa998" id="04200a69-d9f0-46fc-97b3-6bb8b0d07adc">
+<sub-processables/>
+<pipes/>
+<outgoing-pipes/>
+<incoming-pipes>
+    <incomingPipes>0a104b63-381e-442b-b60c-5697a323d4a3</incomingPipes>
+</incoming-pipes>
+                            </processable>
+                        </sub-processables>
+                        <pipes>
+                            <pipe target="5e9fb6a2-61bd-43ac-b2d1-348f6ac23054" source="5ac72762-37a5-4e4c-8357-71af346fa998" id="56d592ad-d544-401c-857f-f4dff25b5ee9">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                            <pipe target="04200a69-d9f0-46fc-97b3-6bb8b0d07adc" source="5ac72762-37a5-4e4c-8357-71af346fa998" id="0a104b63-381e-442b-b60c-5697a323d4a3">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>56d592ad-d544-401c-857f-f4dff25b5ee9</outgoingPipes>
+                            <outgoingPipes>0a104b63-381e-442b-b60c-5697a323d4a3</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes>
+                            <incomingPipes>64a34b64-413c-4f91-b5cf-213473659dad</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                </sub-processables>
+                <pipes/>
+                <outgoing-pipes/>
+                <incoming-pipes/>
+            </processable>
+            <processable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:Pipeline" id="aee1faa9-f8da-402d-84d3-171bbf912019">
+                <sub-processables>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:MultiTouch" display-blob-detector="false" endian="LITTLE_ENDIAN" port-incoming="4444" port-outgoing="4444" address-outgoing="127.0.0.1" y-end="1.0" y-from="0.0" x-end="1.0" x-from="0.0" min-blob-size="4" simple-tracking="false" upscale-factor-2="12.0" dilate-tresh="12" erode-tresh="12" dilate-dist="2" erode-dist="2" downscale-factor="4.0" upscale-factor="12.0" backdiff-scale-tresh="2" subsampling="3" backdiff="false" homogenization="false" camera-id="37" cameras="1" start-tracking-automatically="false" print-fps="false" repaint-img="false" corner-points="" show-white="true" show-pattern="true" image-server-port="7777" osc-port-in="4137" osc-port-out="4037" remote-port="9999" remote-address="127.0.0.1" display-pattern="false" pattern-device="0" image-stream-mode="0" screen-res-h="1080" screen-res-w="1920" pattern-height="5" pattern-width="5" track-contours="false" track-fingers="false" dynamic-backdiff-speed="1000" backdiff-tresh="100" dynamic-backdiff="false" exposure="9" framerate="120" pixelclock="60" tracking-sensitivity="200" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="e730cac9-9309-4142-b6d5-4b5c2b70e782">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="876280aa-82e8-42c4-9e65-35551a6b5b79" source="e730cac9-9309-4142-b6d5-4b5c2b70e782" id="bb9da2bf-d348-4444-819b-490c899f0cf1">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>bb9da2bf-d348-4444-819b-490c899f0cf1</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes/>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:reacTIVision" fiducial-set="AMOEBA_DEFAULT" gamma="100" edge-enhancement="0" hardware-gain="30" pixel-clock="30" exposure-time="20" framerate="20" grid-calibration="0" enable-remote-configuration="false" counter-clockwise-angle="false" periodic-messages="false" tuio-port="4444" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="bb2bfcd7-29f4-4faf-9e34-3211ca6a000e">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="447c57c1-d24e-4c5e-b169-1b3585516b6b" source="bb2bfcd7-29f4-4faf-9e34-3211ca6a000e" id="1d42faf4-4548-4f52-9623-e03ecb791fc1">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>1d42faf4-4548-4f52-9623-e03ecb791fc1</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes/>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:Kalman" smoothing-range-vertical="1" smoothing-range-horizontal="1" smoothing-subpixels="false" maximum-timeout="150" maximum-distance-multi-point="4" maximum-distance-single-point="50" pv-noise="80.0" p-noise="30000" m-noise="80" frame-rate="100" mode="1" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="876280aa-82e8-42c4-9e65-35551a6b5b79">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="263c67aa-ed48-4d6b-8959-4b3079487408" source="876280aa-82e8-42c4-9e65-35551a6b5b79" id="43f38224-cde0-4846-86f9-3059143c8352">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>43f38224-cde0-4846-86f9-3059143c8352</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes>
+                            <incomingPipes>bb9da2bf-d348-4444-819b-490c899f0cf1</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:TUIO" timeout="200" endian="LITTLE_ENDIAN" port-incoming="3334" port-outgoing="3334" address-outgoing="127.0.0.1" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="15320023-0f34-4408-8146-c0c3e6b40ec7">
+                        <sub-processables/>
+                        <pipes/>
+                        <outgoing-pipes/>
+                        <incoming-pipes>
+                            <incomingPipes>433b8fe6-f4c7-4de0-a977-01b1efddd95f</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:TUIO" timeout="200" endian="LITTLE_ENDIAN" port-incoming="3333" port-outgoing="3333" address-outgoing="127.0.0.1" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="9386f072-06d6-4284-a886-ed980ab39b86">
+                        <sub-processables/>
+                        <pipes/>
+                        <outgoing-pipes/>
+                        <incoming-pipes>
+                            <incomingPipes>3a2f892f-8aae-42fe-9fe0-f83616365197</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:ResolutionFilter" treshold="5" Y-Resolution="768" X-Resolution="1024" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="263c67aa-ed48-4d6b-8959-4b3079487408">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="9386f072-06d6-4284-a886-ed980ab39b86" source="263c67aa-ed48-4d6b-8959-4b3079487408" id="3a2f892f-8aae-42fe-9fe0-f83616365197">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>3a2f892f-8aae-42fe-9fe0-f83616365197</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes>
+                            <incomingPipes>43f38224-cde0-4846-86f9-3059143c8352</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:Rotation Median" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="ab69708b-0447-43ce-854d-39c2cb3523d9">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="15320023-0f34-4408-8146-c0c3e6b40ec7" source="ab69708b-0447-43ce-854d-39c2cb3523d9" id="433b8fe6-f4c7-4de0-a977-01b1efddd95f">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>433b8fe6-f4c7-4de0-a977-01b1efddd95f</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes>
+                            <incomingPipes>559e6920-0142-4683-822f-ceec2f45f507</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                    <processable xmlns:ns5="http://hci.uni-konstanz.de/squidy/extension/basic" xsi:type="ns5:Kalman" smoothing-range-vertical="1" smoothing-range-horizontal="1" smoothing-subpixels="false" maximum-timeout="150" maximum-distance-multi-point="4" maximum-distance-single-point="50" pv-noise="80.0" p-noise="30000" m-noise="80" frame-rate="100" mode="1" parent="aee1faa9-f8da-402d-84d3-171bbf912019" id="447c57c1-d24e-4c5e-b169-1b3585516b6b">
+                        <sub-processables/>
+                        <pipes>
+                            <pipe target="ab69708b-0447-43ce-854d-39c2cb3523d9" source="447c57c1-d24e-4c5e-b169-1b3585516b6b" id="559e6920-0142-4683-822f-ceec2f45f507">
+<sub-processables/>
+<input-types>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+</input-types>
+<output-types>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+</output-types>
+                            </pipe>
+                        </pipes>
+                        <outgoing-pipes>
+                            <outgoingPipes>559e6920-0142-4683-822f-ceec2f45f507</outgoingPipes>
+                        </outgoing-pipes>
+                        <incoming-pipes>
+                            <incomingPipes>1d42faf4-4548-4f52-9623-e03ecb791fc1</incomingPipes>
+                        </incoming-pipes>
+                    </processable>
+                </sub-processables>
+                <pipes/>
+                <outgoing-pipes/>
+                <incoming-pipes/>
+            </processable>
+        </sub-processables>
+        <pipes/>
+        <outgoing-pipes/>
+        <incoming-pipes/>
+    </ns2:workspace>
+</ns3:Data>

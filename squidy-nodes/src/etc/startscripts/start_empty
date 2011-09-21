@@ -1,0 +1,2 @@
+java -ms256m -mx1024m -jar jar/squidy_basic.jar --file=pipelines/empty-workspace.sdy
+

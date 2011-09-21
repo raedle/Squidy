@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<h3><strong>Short Description</strong></h3>
+<p>The ContactGestures node recognizes "Click"-gestures in DataPosition2D's (pre-requirement: identification of contacts with the PositionIdentifier or the Kalman node). For example, this is needed to translate touch contacts from a tabletop to MouseClicks. A Click is recognized when a DataPosition2D is identified without moving for no longer than specified in the parameter &quot;Timeout&quot;. <br />
+Furthermore, the DataPosition2D must not have moved more than specified in the Parameter &quot;Maximum distance&quot;. I.e. this corresponds to a brief tapping with a finger on a tabletop. When a Click was recognized, a DataButton is published to all outbound pipes. For example, a Mouse I/O filter can use these DataButton data to emulate mouse clicks.</p>
+<p><strong>Node Type:</strong> Filter</p>
+<p><strong>Pre-requirement:</strong> Identification of contacts with the PositionIdentifier or the Kalman node</p>
+<p><strong>Receives on Input Pin:</strong> DataPosition2D (e.g. finger contact)</p>
+<p><strong>Publish on Output Pin:</strong> DataButton (when a click was recognized)</p>
+<p>&nbsp;</p>
+<h3><strong>Detailed Description  </strong></h3>
+<p><strong>Data Input:</strong></p>
+
+<p> tbd.</p>
+<p><strong>Data Output:    </strong></p>
+<p>tbd.</p></body>
+</html>
