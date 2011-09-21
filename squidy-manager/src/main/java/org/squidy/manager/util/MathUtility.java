@@ -294,9 +294,9 @@ public class MathUtility {
 	public double euclidDist(Point3d d1,Point3d d2){
 		double dist = 0;
 		dist = Math.sqrt(
-				(d1.getX() - d2.getX())*(d1.getX() - d2.getX()) +
-				(d1.getY() - d2.getY())*(d1.getY() - d2.getY()) +
-				(d1.getZ() - d2.getZ())*(d1.getZ() - d2.getZ())
+				(d1.x - d2.x)*(d1.x - d2.x) +
+				(d1.y - d2.y)*(d1.y - d2.y) +
+				(d1.z - d2.z)*(d1.z - d2.z)
 				);
 
 		return dist;

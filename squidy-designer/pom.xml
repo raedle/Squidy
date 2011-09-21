@@ -119,5 +119,10 @@
 			<artifactId>PDFRenderer</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.jvnet.annox</groupId>
+			<artifactId>annox</artifactId>
+			<version>0.5.0</version>
+		</dependency>
 	</dependencies>
 </project>
