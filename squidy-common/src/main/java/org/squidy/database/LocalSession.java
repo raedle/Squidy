@@ -3,7 +3,9 @@
  */
 package org.squidy.database;
 
-import org.basex.server.trigger.TriggerNotification;
+import java.io.IOException;
+
+import org.basex.server.EventNotifier;
 
 /**
  * <code>LocalSession</code>.
@@ -27,44 +29,42 @@ public class LocalSession implements Session {
 	/* (non-Javadoc)
 	 * @see org.squidy.database.Session#execute(java.lang.String)
 	 */
-	public String execute(String command) throws Exception {
+	public String execute(String command) throws IOException {
 		return "";
 	}
 
 	/* (non-Javadoc)
 	 * @see org.squidy.database.Session#createTrigger(java.lang.String)
 	 */
-	public void createTrigger(String name) throws Exception {
+	public void createTrigger(String name) throws IOException {
 
 	}
 
 	/* (non-Javadoc)
 	 * @see org.squidy.database.Session#dropTrigger(java.lang.String)
 	 */
-	public void dropTrigger(String name) throws Exception {
+	public void dropTrigger(String name) throws IOException {
 
 	}
 
 	/* (non-Javadoc)
 	 * @see org.squidy.database.Session#attachTrigger(java.lang.String, org.basex.server.trigger.TriggerNotification)
 	 */
-	public void attachTrigger(String name, TriggerNotification notification)
-			throws Exception {
+	public void attachTrigger(String name, EventNotifier notification) throws IOException {
 
 	}
 
 	/* (non-Javadoc)
 	 * @see org.squidy.database.Session#detachTrigger(java.lang.String)
 	 */
-	public void detachTrigger(String name) throws Exception {
+	public void detachTrigger(String name) throws IOException {
 
 	}
 
 	/* (non-Javadoc)
 	 * @see org.squidy.database.Session#trigger(java.lang.String, java.lang.String, java.lang.String)
 	 */
-	public void trigger(String query, String name, String notification)
-			throws Exception {
+	public void trigger(String query, String name, String notification)	throws IOException {
 
 	}
 }

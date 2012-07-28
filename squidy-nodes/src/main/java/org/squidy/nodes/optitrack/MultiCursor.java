@@ -20,7 +20,6 @@ import javax.swing.JWindow;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
-import org.apache.commons.collections.CollectionUtils;
 import org.squidy.designer.util.ImageUtils;
 import org.squidy.manager.controls.TextField;
 import org.squidy.manager.data.DataConstant;

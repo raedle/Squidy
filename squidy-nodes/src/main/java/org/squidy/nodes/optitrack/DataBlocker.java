@@ -15,7 +15,6 @@ import javax.vecmath.Point2d;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
-import org.hibernate.mapping.Array;
 import org.squidy.manager.controls.CheckBox;
 import org.squidy.manager.controls.ComboBox;
 import org.squidy.manager.controls.TextField;

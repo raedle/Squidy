@@ -1,9 +1,8 @@
 package org.squidy.nodes.optitrack.intercept;
 
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
-
-import javassist.bytecode.Descriptor.Iterator;
 
 import javax.vecmath.Point2d;
 
@@ -71,7 +70,7 @@ public class StatisticQueue extends LinkedList<Double> {
 			Collections.reverse(outList);
 		}
 
-		Iterator itr = (Iterator) outList.iterator();
+		Iterator<Double> itr = (Iterator<Double>) outList.iterator();
 		int counter = 0;
 		double sum = 0;
 		while (itr.hasNext())

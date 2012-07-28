@@ -3,7 +3,9 @@
  */
 package org.squidy.database;
 
-import org.basex.server.trigger.TriggerNotification;
+import java.io.IOException;
+
+import org.basex.server.EventNotifier;
 
 
 /**
@@ -24,10 +26,5 @@ import org.basex.server.trigger.TriggerNotification;
  *
  */
 public interface Session {
-	String execute(String command) throws Exception;
-	void createTrigger(String name) throws Exception;
-	void dropTrigger(String name) throws Exception;
-	void attachTrigger(String name, TriggerNotification notification) throws Exception;
-	void detachTrigger(String name) throws Exception;
-	void trigger(String query, String name, String notification) throws Exception;
+	String execute(String command) throws IOException;
 }

@@ -70,7 +70,7 @@ public class BaseXStorage implements Storage {
 		
 		try {
 			BaseXSessionProvider.get().getSession().execute("xquery declare namespace common='http://hci.uni-konstanz.de/squidy/common'; replace node /common:Data with " + xml);
-		} catch (BaseXException e) {
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -89,7 +89,7 @@ public class BaseXStorage implements Storage {
 		return null;
 	}
 	
-	private InputStream queryWorkspace() throws Exception {
+	private InputStream queryWorkspace() throws IOException {
 
 //		int option = JOptionPane.showOptionDialog(Designer.getInstance(), "Choose Database", "Choice", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, val2, val2[0]);
 //		
@@ -101,20 +101,23 @@ public class BaseXStorage implements Storage {
 //						+ "for $x in /common:workspaces/*[@name='" + workspace + "']"
 //						+ "return $x"), out);
 		
-		ByteArrayOutputStream out = new ByteArrayOutputStream();
-		out.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n".getBytes());
+		StringBuilder sb = new StringBuilder("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
+		sb.append(System.getProperty("line.separator"));
+		
 //		session.execute(new XQuery("declare namespace common='http://hci.uni-konstanz.de/squidy/common';" +
 //				"declare namespace manager='http://hci.uni-konstanz.de/squidy/manager';" +
 //				"declare namespace designer='http://hci.uni-konstanz.de/squidy/designer';" +
 //				"declare namespace basic='http://hci.uni-konstanz.de/squidy/extension/basic';" +
 //				"/*"), out);
 		
-		BaseXSessionProvider.get().getSession().execute("xquery /*", out);
+		String result = BaseXSessionProvider.get().getSession().execute("xquery /*");
+		
+		sb.append(result);
 		
 //		WorkspaceConnectionService.get().getSession().execute(new XQuery("/*"), out);
 		
 //		System.out.println("ANSWER: " + out.toString());
 		
-		return new ByteArrayInputStream(out.toByteArray());
+		return new ByteArrayInputStream(sb.toString().getBytes());
 	}
 }

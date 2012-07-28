@@ -13,7 +13,7 @@ import org.apache.commons.logging.LogFactory;
 import org.basex.BaseXServer;
 import org.basex.core.BaseXException;
 import org.basex.server.ClientSession;
-import org.basex.server.trigger.TriggerNotification;
+import org.basex.server.EventNotifier;
 import org.squidy.Namespaces;
 
 
@@ -34,7 +34,7 @@ import org.squidy.Namespaces;
  * @since 1.5.0
  *
  */
-public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<BaseXSession>, TriggerNotification {
+public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<BaseXSession>, EventNotifier {
 
 	// A logger to log info, error, debug,... messages.
 	private static final Log LOG = LogFactory.getLog(BaseXSessionProvider.class);
@@ -110,7 +110,12 @@ public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<Base
 				if (LOG.isWarnEnabled())
 					LOG.warn("Could not connect to database " + db + " [host=" + host + ",port=" + port + ",user=" + user + "][cause=" + e.getMessage() + "]");
 				
-				startServer();
+				try {
+					startServer();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				return createSession();
 			}
 		} catch (IOException e) {
@@ -128,7 +133,7 @@ public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<Base
 					session.execute("create db " + db + " <common:Data xmlns:common='" + Namespaces.NAMESPACE_PREFIX_COMMON + "' />");
 					session.execute("open " + db);
 				}
-			} catch (BaseXException e) {
+			} catch (IOException e) {
 				if (LOG.isErrorEnabled())
 					LOG.error(e);
 			}
@@ -136,25 +141,25 @@ public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<Base
 		if (session != null) {
 			try {
 				if (!containsTrigger(session))
-					session.createTrigger(REMOTE_UPDATE_TRIGGER_NAME);
-			} catch (BaseXException e) {
+					session.execute("create event " + REMOTE_UPDATE_TRIGGER_NAME);
+			} catch (IOException e) {
 				if (LOG.isErrorEnabled())
-					LOG.error("Failed to create trigger " + REMOTE_UPDATE_TRIGGER_NAME + ".", e);
+					LOG.error("Failed to create trigger " + REMOTE_UPDATE_TRIGGER_NAME, e);
 			}
 			
 			try {
-				session.attachTrigger(REMOTE_UPDATE_TRIGGER_NAME, this);
-			} catch (BaseXException e) {
+				session.watch(REMOTE_UPDATE_TRIGGER_NAME, this);
+			} catch (IOException e) {
 				if (LOG.isErrorEnabled())
-					LOG.error("Failed to attach trigger " + REMOTE_UPDATE_TRIGGER_NAME + ".", e);
+					LOG.error("Failed to attach trigger " + REMOTE_UPDATE_TRIGGER_NAME, e);
 			}
 		}
 		
 		return session;
 	}
 	
-	private boolean containsTrigger(ClientSession session) throws BaseXException {
-		String triggers = session.execute("show triggers");
+	private boolean containsTrigger(ClientSession session) throws IOException {
+		String triggers = session.execute("show events");
 		
 		if (!triggers.isEmpty())
 			for (String trigger : triggers.split("\n")) {
@@ -164,7 +169,7 @@ public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<Base
 		return false;
 	}
 
-	private void startServer() {
+	private void startServer() throws IOException {
 		final BaseXServer server = new BaseXServer("-p " + port);
 		
 		Runtime.getRuntime().addShutdownHook(new Thread() {
@@ -172,7 +177,12 @@ public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<Base
 			@Override
 			public void run() {
 				super.run();
-				server.stop();
+				try {
+					server.stop();
+				} catch (IOException e) {
+					if (LOG.isErrorEnabled())
+						LOG.error("Could not stop server", e);
+				}
 			}
 		});
 	}
@@ -217,17 +227,17 @@ public class BaseXSessionProvider implements RemoteUpdatableSessionProvider<Base
 		
 		try {
 			if (!ignoreUpdateRemote)
-				getSession().trigger("1 to 1", REMOTE_UPDATE_TRIGGER_NAME, "type" + RemoteUpdatable.KEY_VALUE_DELIMITER + type + RemoteUpdatable.KEY_VALUE_PAIR_DELIMITER + "id" + RemoteUpdatable.KEY_VALUE_DELIMITER + id + RemoteUpdatable.KEY_VALUE_PAIR_DELIMITER + "serial" + RemoteUpdatable.KEY_VALUE_DELIMITER + serial);
-		} catch (BaseXException e) {
+					getSession().execute("db:event(" + REMOTE_UPDATE_TRIGGER_NAME + ", type" + RemoteUpdatable.KEY_VALUE_DELIMITER + type + RemoteUpdatable.KEY_VALUE_PAIR_DELIMITER + "id" + RemoteUpdatable.KEY_VALUE_DELIMITER + id + RemoteUpdatable.KEY_VALUE_PAIR_DELIMITER + "serial" + RemoteUpdatable.KEY_VALUE_DELIMITER + serial + ")");
+		} catch (IOException e) {
 			if (LOG.isErrorEnabled())
 				LOG.error(e);
 		}
 	}
 
-	public void update(String data) {
+	public void notify(final String value) {
 		Properties props = new Properties();
 		try {
-			props.load(new StringReader(data));
+			props.load(new StringReader(value));
 			
 			String type = props.getProperty("type");
 			String id = props.getProperty("id");

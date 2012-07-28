@@ -23,8 +23,9 @@ import java.util.TreeMap;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.basex.server.trigger.TriggerNotification;
+import org.basex.server.EventNotifier;
 import org.mvel2.MVEL;
+import org.squidy.database.BaseXSession;
 import org.squidy.database.Session;
 import org.squidy.database.SessionFactoryProvider;
 import org.squidy.manager.model.ModelData;
@@ -34,7 +35,6 @@ import org.squidy.manager.model.Processable;
 import org.squidy.manager.model.Workspace;
 import org.squidy.manager.parser.ModelHandler;
 import org.squidy.resource.MessageResourceBundle;
-
 
 /**
  * <code>Manager</code>.
@@ -165,31 +165,37 @@ public class Manager {
 		this.data = data;
 
 		Session session = SessionFactoryProvider.getProvider().getSession();
+		
+		if (!(session instanceof BaseXSession))
+			return;
+		
+		BaseXSession basexSession = (BaseXSession)session;
+					
+		
 		if (session != null)
 			try {
-				session.createTrigger(TRIGGER_PROPERTY);
-				session.attachTrigger(TRIGGER_PROPERTY,
-						new TriggerNotification() {
+				basexSession.execute("create event " + TRIGGER_PROPERTY);
+				basexSession.watch(TRIGGER_PROPERTY, new EventNotifier() {
 
-//							@Override
-							public void update(String data) {
-								String[] a = data.split(",");
-								String[] a0 = a[0].split("=");
-								String[] a1 = a[1].split("=");
+					@Override
+					public void notify(final String value) {
+						String[] a = value.split(",");
+						String[] a0 = a[0].split("=");
+						String[] a1 = a[1].split("=");
 
-								Processable p = getProcessableWithId(
-										Manager.this.data.getWorkspace(), a0[1]);
-								setProperty(p, a1[0], a1[1]);
-							}
-						});
+						Processable p = getProcessableWithId(
+								Manager.this.data.getWorkspace(), a0[1]);
+						setProperty(p, a1[0], a1[1]);
+					}
+				});
 
-				session.createTrigger(TRIGGER_PROCESSING);
-				session.attachTrigger(TRIGGER_PROCESSING,
-						new TriggerNotification() {
+				basexSession.execute("create event " + TRIGGER_PROCESSING);
+				basexSession.watch(TRIGGER_PROCESSING,
+						new EventNotifier() {
 
-//							@Override
-							public void update(String data) {
-								String[] a = data.split(",");
+							@Override
+							public void notify(final String value) {
+								String[] a = value.split(",");
 								String[] a0 = a[0].split("=");
 								String[] a1 = a[1].split("=");
 
@@ -449,16 +455,16 @@ public class Manager {
 			if (res != null)
 				return res;
 		}
-		
+
 		if (processable instanceof Piping) {
 			Piping piping = (Piping) processable;
-			
+
 			for (Pipe pipe : piping.getPipes()) {
 				if (id.equals(pipe.getId()))
 					return pipe;
 			}
 		}
-		
+
 		return null;
 	}
 
@@ -466,8 +472,10 @@ public class Manager {
 			Object value) {
 		try {
 			setProperty(processable, name, value);
-			SessionFactoryProvider.getProvider().getSession().trigger("1 to 10", TRIGGER_PROPERTY, "processable="
-					+ processable.getId() + "," + name + "=" + value);
+			SessionFactoryProvider
+					.getProvider()
+					.getSession()
+					.execute("db:event(" + TRIGGER_PROPERTY + ",processable=" + processable.getId() + "," + name + "=" + value + ")");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -483,8 +491,10 @@ public class Manager {
 
 	public void notify(Processable processable, Processable.Action action) {
 		try {
-			SessionFactoryProvider.getProvider().getSession().trigger("1 to 10", TRIGGER_PROCESSING, "processable="
-					+ processable.getId() + ",action=" + action);
+			SessionFactoryProvider
+					.getProvider()
+					.getSession()
+					.execute("db:event(" + TRIGGER_PROCESSING + ",processable=" + processable.getId() + ",action=" + action + ")");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

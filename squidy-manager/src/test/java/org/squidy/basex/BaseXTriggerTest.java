@@ -13,7 +13,7 @@ import java.util.UUID;
 import org.basex.BaseXServer;
 import org.basex.core.BaseXException;
 import org.basex.server.ClientSession;
-import org.basex.server.trigger.TriggerNotification;
+import org.basex.server.EventNotifier;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -51,9 +51,10 @@ public final class BaseXTriggerTest {
 	/** Control client sessions. */
 	private ClientSession[] ccs = new ClientSession[4];
 	
-	/** Starts the server. */
+	/** Starts the server. 
+	 * @throws IOException */
 	@BeforeClass
-	public static void start() {
+	public static void start() throws IOException {
 		server = new BaseXServer("-z");
 	}
 
@@ -82,9 +83,10 @@ public final class BaseXTriggerTest {
 		}
 	}
 
-	/** Stops the server. */
+	/** Stops the server. 
+	 * @throws IOException */
 //	@AfterClass
-	public static void stop() {
+	public static void stop() throws IOException {
 		server.stop();
 	}
 
@@ -95,7 +97,7 @@ public final class BaseXTriggerTest {
 	 *             command exception
 	 */
 	@Test
-	public void command() throws BaseXException {
+	public void command() throws IOException {
 		
 		final Processable p = new Processable() {
 			
@@ -113,21 +115,15 @@ public final class BaseXTriggerTest {
 		};
 
 		// Create a trigger.
-		mc.createTrigger(Manager.TRIGGER_PROPERTY);
+		mc.execute("create event " + Manager.TRIGGER_PROPERTY);
 
 		// Attach half of the clients to the trigger.
 		for (int i = ccs.length / 2; i < ccs.length; i++) {
-			ccs[i].attachTrigger(Manager.TRIGGER_PROPERTY, new TriggerNotification() {
-
-				/*
-				 * (non-Javadoc)
-				 * 
-				 * @see
-				 * org.basex.server.trigger.TriggerNotification#income(byte[])
-				 */
-//				@Override
-				public void update(String data) {
-					assertEquals("processable=" + p.getId() + ",myProperty=myValue", new String(data));
+			ccs[i].watch(Manager.TRIGGER_PROPERTY, new EventNotifier() {
+				
+				@Override
+				public void notify(final String value) {
+					assertEquals("processable=" + p.getId() + ",myProperty=myValue", new String(value));
 				}
 			});
 		}
@@ -137,10 +133,10 @@ public final class BaseXTriggerTest {
 
 		// Detach all clients attached to trigger beforehand.
 		for (int i = ccs.length / 2; i < ccs.length; i++) {
-			ccs[i].detachTrigger(Manager.TRIGGER_PROPERTY);
+			ccs[i].unwatch(Manager.TRIGGER_PROPERTY);
 		}
 
 		// Drop a trigger.
-		mc.dropTrigger(Manager.TRIGGER_PROPERTY);
+		mc.execute("drop event " + Manager.TRIGGER_PROPERTY);
 	}
 }

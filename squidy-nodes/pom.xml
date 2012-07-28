@@ -149,15 +149,6 @@
 			<artifactId>jmdns</artifactId>
 			<version>1.0</version>
 		</dependency>
-		<!--
-			<dependency> <groupId>gnu.io</groupId>
-			<artifactId>rxtxSerial</artifactId> <version>2.1.7</version>
-			<type>dll</type> </dependency>
-		-->
-		<!--
-			<dependency> <groupId>hypermedia.video</groupId>
-			<artifactId>OpenCV</artifactId> <version>1.0</version> </dependency>
-		-->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>

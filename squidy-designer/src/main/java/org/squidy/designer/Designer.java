@@ -57,7 +57,7 @@ import javax.swing.filechooser.FileFilter;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.basex.server.trigger.TriggerNotification;
+import org.basex.server.EventNotifier;
 import org.squidy.BaseXStorage;
 import org.squidy.LocalJAXBStorage;
 import org.squidy.SquidyException;
@@ -65,6 +65,7 @@ import org.squidy.Storage;
 import org.squidy.StorageHandler;
 import org.squidy.common.dynamiccode.HotDeployClassLoader;
 import org.squidy.common.util.ReflectionUtil;
+import org.squidy.database.BaseXSession;
 import org.squidy.database.RemoteUpdatableSessionProvider;
 import org.squidy.database.Session;
 import org.squidy.database.SessionFactory;
@@ -1180,17 +1181,24 @@ public class Designer extends PFrame implements StorageHandler {
 	private void initializeSession() {
 		try {
 			Session session = SessionFactoryProvider.getProvider().getSession();
-			session.createTrigger("add");
-			session.attachTrigger("add", new TriggerNotification() {
+			
+			if (!(session instanceof BaseXSession))
+				return;
+			
+			BaseXSession basexSession = (BaseXSession)session;
+			
+			basexSession.execute("create event add");
+			basexSession.watch("add", new EventNotifier() {
 				
 				// type=org.squidy.designer.model.PipeShape,shape=<id>,pipe=<id>,source=<id>,target=<id>
-				public void update(String data) {
+				@Override
+				public void notify(final String value) {
 					SessionFactory<? extends Session> provider = SessionFactoryProvider.getProvider();
 					
 					if (provider instanceof RemoteUpdatableSessionProvider<?>)
 						((RemoteUpdatableSessionProvider<? extends Session>) provider).setIgnoreUpdateRemote(true);
 					
-					String[] addStr = data.split(",");
+					String[] addStr = value.split(",");
 					
 					String typeStr = addStr[0].split("=")[1];
 					Class<?> type = ReflectionUtil.loadClass(typeStr);
@@ -1265,23 +1273,22 @@ public class Designer extends PFrame implements StorageHandler {
 			if (shape instanceof PipeShape) {
 				PipeShape pipeShape = (PipeShape) shape;
 				// type=org.squidy.designer.model.PipeShape,shape=<id>,pipe=<id>,source=<id>,target=<id>
-				SessionFactoryProvider.getProvider().getSession().trigger("1 to 1", "add",
-						"type=" + pipeShape.getClass().getName() +
+				SessionFactoryProvider.getProvider().getSession().execute("db:event(add,type=" + pipeShape.getClass().getName() +
 						",shape=" + pipeShape.getId() + 
 						",pipe=" + pipeShape.getPipe().getId() + 
 						",source=" + pipeShape.getSource().getId() + 
-						",target=" + pipeShape.getTarget().getId());
+						",target=" + pipeShape.getTarget().getId() + ")");
 			}
 			else if (shape instanceof ContainerShape<?, ?>) {
 				ContainerShape<?, ?> containerShape = (ContainerShape<?, ?>) shape;
 				// type=<processor_type>,processor=<id>,shape=<id>,layoutConstraintId=<id>,parent=<id>,x=<id>,y=<id>
-				SessionFactoryProvider.getProvider().getSession().trigger("1 to 1", "add", "type=" + containerShape.getProcessable().getClass().getName() +
+				SessionFactoryProvider.getProvider().getSession().execute("db:event(add, type=" + containerShape.getProcessable().getClass().getName() +
 						",processor=" + containerShape.getProcessable().getId() +
 						",shape=" + containerShape.getId() +
 						",layoutConstraintId=" + containerShape.getLayoutConstraint().getId() +
 						",parent=" + ((ContainerShape<?, ?>) containerShape.getParent()).getId() + 
 						",x=" + containerShape.getOffset().getX() + 
-						",y=" + containerShape.getOffset().getY());
+						",y=" + containerShape.getOffset().getY() + ")");
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

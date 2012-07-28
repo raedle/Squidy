@@ -6,6 +6,7 @@ package org.squidy.database;
 import java.io.IOException;
 
 import org.basex.server.ClientSession;
+import org.basex.server.EventNotifier;
 
 /**
  * <code>BaseXSession</code>.
