@@ -353,7 +353,7 @@
 		<repository>
 			<id>hci-artifactory-releases</id>
 			<name>Squidy Interaction Library Maven Repository</name>
-			<url>http://dm.squidy-lib.de/repo</url>
+			<url>http://134.34.205.137/repo</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -381,7 +381,7 @@
 		<repository>
 			<id>squidy-libs-releases</id>
 			<name>Squidy Interaction Library Maven Repository Releases</name>
-			<url>http://dm.squidy-lib.de/squidy-libs-releases-local</url>
+			<url>http://134.34.205.137/libs-release-local</url>
 		</repository>
 	</distributionManagement>
 
@@ -423,16 +423,6 @@
 			        </plugin>
 				</plugins>
 			</build>
-		</profile>
-		<profile>
-			<id>website-merkur61</id>
-            <distributionManagement>
-                <site>
-                    <id>squidy-website</id>
-                    <name>Squidy Interaction Library Website</name>
-                    <url>scp://merkur61.inf.uni-konstanz.de/home/tomcat/apache-tomcat-6.0.16/webapps/squidy</url>
-                </site>
-            </distributionManagement>
 		</profile>
 		<profile>
 			<id>website-sourceforge</id>

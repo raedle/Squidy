@@ -106,13 +106,11 @@
 			<groupId>org.xhtmlrenderer</groupId>
 			<artifactId>xhtmlrenderer</artifactId>
 			<version>1.0</version>
-			<classifier>R8</classifier>
 		</dependency>
 		<dependency>
 			<groupId>org.xhtmlrenderer</groupId>
 			<artifactId>xhtmlrenderer-minimal</artifactId>
 			<version>1.0</version>
-			<classifier>R8</classifier>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.pdfview</groupId>
