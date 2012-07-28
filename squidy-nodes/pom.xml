@@ -28,8 +28,7 @@
 									</descriptorRefs>
 									<archive>
 										<manifest>
-											<mainClass>org.squidy.designer.DesignerWithSplash</mainClass>
-											<packageName>org.squidy.designer</packageName>
+											<mainClass>Start</mainClass>
 										</manifest>
 										<manifestEntries>
 											<mode>development</mode>
