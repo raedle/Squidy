@@ -10,4 +10,4 @@ $> mvn package -Dmaven.test.skip=true -P assembly
 
 Then run Squidy with the following command:
 
-$> java -ms256m -mx1024m -jar squidy-nodes/target/squidy_basic.jar
+$> java -ms256m -mx1024m -jar squidy-nodes/target/squidy-1.5.0-SNAPSHOT-jar-with-dependencies.jar
