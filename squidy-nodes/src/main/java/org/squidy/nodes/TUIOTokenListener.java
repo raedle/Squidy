@@ -365,7 +365,7 @@ public class TUIOTokenListener extends AbstractNode {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @seede.ukn.hci.squidy.manager.data.logic.ReflectionProcessable#
+	 * @see org.squidy.manager.data.logic.ReflectionProcessable#
 	 * beforeDataContainerProcessing
 	 * (org.squidy.manager.data.IDataContainer)
 	 */

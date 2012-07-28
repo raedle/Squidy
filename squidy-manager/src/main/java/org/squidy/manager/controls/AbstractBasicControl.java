@@ -75,7 +75,7 @@ public abstract class AbstractBasicControl<T, C extends JComponent> implements I
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @seede.ukn.hci.squidy.designer.components.basiccontrols.IBasicControl#
+	 * @see org.squidy.designer.components.basiccontrols.IBasicControl#
 	 * getComponent()
 	 */
 	public C getComponent() {
@@ -93,7 +93,7 @@ public abstract class AbstractBasicControl<T, C extends JComponent> implements I
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @seede.ukn.hci.squidy.designer.components.basiccontrols.IBasicControl#
+	 * @see org.squidy.designer.components.basiccontrols.IBasicControl#
 	 * addPropertyUpdateListener
 	 * (org.squidy.designer.components.PropertyUpdateListener)
 	 */
@@ -104,7 +104,7 @@ public abstract class AbstractBasicControl<T, C extends JComponent> implements I
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @seede.ukn.hci.squidy.designer.components.basiccontrols.IBasicControl#
+	 * @see org.squidy.designer.components.basiccontrols.IBasicControl#
 	 * removePropertyUpdateListener
 	 * (org.squidy.designer.components.PropertyUpdateListener)
 	 */

@@ -238,7 +238,7 @@ public class ImagePanelControl extends AbstractBasicControl<Boolean, JPanel>
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @seede.ukn.hci.squidy.manager.controls.AbstractBasicControl#
+	 * @see org.squidy.manager.controls.AbstractBasicControl#
 	 * setValueWithoutPropertyUpdate(java.lang.Object)
 	 */
 

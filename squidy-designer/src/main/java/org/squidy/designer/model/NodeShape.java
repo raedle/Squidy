@@ -847,7 +847,7 @@ public class NodeShape extends ConnectorShape<ZoomShape<?>, Piping> implements D
 					/*
 					 * (non-Javadoc)
 					 * 
-					 * @seede.ukn.hci.squidy.designer.components.
+					 * @see org.squidy.designer.components.
 					 * PropertyUpdateListener #propertyUpdate(java.lang.Object)
 					 */
 					public void propertyUpdate(Object value) {

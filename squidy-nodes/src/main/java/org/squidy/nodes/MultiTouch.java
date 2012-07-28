@@ -1412,7 +1412,7 @@ public class MultiTouch extends AbstractNode implements CameraCallback {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @seede.ukn.hci.squidy.manager.data.logic.ReflectionProcessable#
+	 * @see org.squidy.manager.data.logic.ReflectionProcessable#
 	 * beforeDataContainerProcessing
 	 * (org.squidy.manager.data.IDataContainer)
 	 */

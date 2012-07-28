@@ -77,7 +77,7 @@ public class WhiteScreen extends SwitchableCommand implements Serializable {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @seede.ukn.hci.squidy.control.command.SwitchableCommand#on(org.squidy.control.
+	 * @see org.squidy.control.command.SwitchableCommand#on(org.squidy.control.
 	 * ControlServerContext)
 	 */
 	public ICommand on(ControlServerContext context) {

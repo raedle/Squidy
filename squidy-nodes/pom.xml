@@ -28,8 +28,8 @@
 									</descriptorRefs>
 									<archive>
 										<manifest>
-											<mainClass>de.ukn.hci.squidy.designer.DesignerWithSplash</mainClass>
-											<packageName>de.ukn.hci.squidy.designer</packageName>
+											<mainClass>org.squidy.designer.DesignerWithSplash</mainClass>
+											<packageName>org.squidy.designer</packageName>
 										</manifest>
 										<manifestEntries>
 											<mode>development</mode>

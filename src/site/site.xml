@@ -2,7 +2,7 @@
 <project name="Squidy Interaction Library">
  
 	<skin>
-		<groupId>de.ukn.hci.squidy</groupId>
+		<groupId>org.squidy</groupId>
 		<artifactId>squidy-site-skin</artifactId>
 		<version>1.0.1</version>
 	</skin>

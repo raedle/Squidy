@@ -134,34 +134,34 @@
                             <pipe target="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c" source="3f4b05d9-5178-4f96-ae1d-da924427e586" id="89196cfd-0dea-4b35-90c0-45f54a0751f1">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -176,34 +176,34 @@
                             <pipe target="5ac72762-37a5-4e4c-8357-71af346fa998" source="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c" id="64a34b64-413c-4f91-b5cf-213473659dad">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -221,34 +221,34 @@
                             <pipe target="2a0842bb-c429-4ffe-a240-bcc8d6a25b1c" source="d8649f4d-d66e-425f-b363-cc77bbb59040" id="6514898d-68e5-470f-9de6-a46f44efb9e6">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -265,34 +265,34 @@
     <pipe target="9bfdbffe-403e-4be8-a537-97691245af89" source="5e9fb6a2-61bd-43ac-b2d1-348f6ac23054" id="67a0c33a-34b6-4331-bef4-9162e7026168">
         <sub-processables/>
         <input-types>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-            <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+            <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+            <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+            <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+            <input-type>org.squidy.manager.data.IData</input-type>
+            <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+            <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+            <input-type>org.squidy.manager.data.impl.DataString</input-type>
+            <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+            <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+            <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+            <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+            <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+            <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
         </input-types>
         <output-types>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-            <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+            <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+            <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+            <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+            <output-type>org.squidy.manager.data.IData</output-type>
+            <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+            <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+            <output-type>org.squidy.manager.data.impl.DataString</output-type>
+            <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+            <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+            <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+            <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+            <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+            <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
         </output-types>
     </pipe>
 </pipes>
@@ -324,67 +324,67 @@
                             <pipe target="5e9fb6a2-61bd-43ac-b2d1-348f6ac23054" source="5ac72762-37a5-4e4c-8357-71af346fa998" id="56d592ad-d544-401c-857f-f4dff25b5ee9">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                             <pipe target="04200a69-d9f0-46fc-97b3-6bb8b0d07adc" source="5ac72762-37a5-4e4c-8357-71af346fa998" id="0a104b63-381e-442b-b60c-5697a323d4a3">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -409,34 +409,34 @@
                             <pipe target="876280aa-82e8-42c4-9e65-35551a6b5b79" source="e730cac9-9309-4142-b6d5-4b5c2b70e782" id="bb9da2bf-d348-4444-819b-490c899f0cf1">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -451,34 +451,34 @@
                             <pipe target="447c57c1-d24e-4c5e-b169-1b3585516b6b" source="bb2bfcd7-29f4-4faf-9e34-3211ca6a000e" id="1d42faf4-4548-4f52-9623-e03ecb791fc1">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -493,34 +493,34 @@
                             <pipe target="263c67aa-ed48-4d6b-8959-4b3079487408" source="876280aa-82e8-42c4-9e65-35551a6b5b79" id="43f38224-cde0-4846-86f9-3059143c8352">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -553,34 +553,34 @@
                             <pipe target="9386f072-06d6-4284-a886-ed980ab39b86" source="263c67aa-ed48-4d6b-8959-4b3079487408" id="3a2f892f-8aae-42fe-9fe0-f83616365197">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -597,34 +597,34 @@
                             <pipe target="15320023-0f34-4408-8146-c0c3e6b40ec7" source="ab69708b-0447-43ce-854d-39c2cb3523d9" id="433b8fe6-f4c7-4de0-a977-01b1efddd95f">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>
@@ -641,34 +641,34 @@
                             <pipe target="ab69708b-0447-43ce-854d-39c2cb3523d9" source="447c57c1-d24e-4c5e-b169-1b3585516b6b" id="559e6920-0142-4683-822f-ceec2f45f507">
 <sub-processables/>
 <input-types>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataKey</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.IData</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataHand</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataString</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataButton</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataToken</input-type>
-    <input-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataInertial</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition3D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataKey</input-type>
+    <input-type>org.squidy.manager.data.IData</input-type>
+    <input-type>org.squidy.manager.data.impl.DataHand</input-type>
+    <input-type>org.squidy.manager.data.impl.DataFinger</input-type>
+    <input-type>org.squidy.manager.data.impl.DataString</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition6D</input-type>
+    <input-type>org.squidy.manager.data.impl.DataDigital</input-type>
+    <input-type>org.squidy.manager.data.impl.DataButton</input-type>
+    <input-type>org.squidy.manager.data.impl.DataAnalog</input-type>
+    <input-type>org.squidy.manager.data.impl.DataToken</input-type>
+    <input-type>org.squidy.manager.data.impl.DataPosition2D</input-type>
 </input-types>
 <output-types>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataInertial</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition3D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataKey</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.IData</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataHand</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataFinger</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataString</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition6D</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataDigital</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataButton</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataAnalog</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataToken</output-type>
-    <output-type>de.ukn.hci.squidy.manager.data.impl.DataPosition2D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataInertial</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition3D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataKey</output-type>
+    <output-type>org.squidy.manager.data.IData</output-type>
+    <output-type>org.squidy.manager.data.impl.DataHand</output-type>
+    <output-type>org.squidy.manager.data.impl.DataFinger</output-type>
+    <output-type>org.squidy.manager.data.impl.DataString</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition6D</output-type>
+    <output-type>org.squidy.manager.data.impl.DataDigital</output-type>
+    <output-type>org.squidy.manager.data.impl.DataButton</output-type>
+    <output-type>org.squidy.manager.data.impl.DataAnalog</output-type>
+    <output-type>org.squidy.manager.data.impl.DataToken</output-type>
+    <output-type>org.squidy.manager.data.impl.DataPosition2D</output-type>
 </output-types>
                             </pipe>
                         </pipes>

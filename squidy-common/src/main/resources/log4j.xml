@@ -29,15 +29,15 @@
    <!-- Limit categories -->
    <!-- ================ -->
    
-   <category name="de.ukn.hci.squidy">
+   <category name="org.squidy">
       <priority value="DEBUG"/>
    </category>
    
-   <category name="de.ukn.hci.squidy.manager">
+   <category name="org.squidy.manager">
       <priority value="DEBUG"/>
    </category>
    
-   <category name="de.ukn.hci.squidy.designer">
+   <category name="org.squidy.designer">
       <priority value="DEBUG"/>
    </category>
    
