@@ -86,23 +86,6 @@
 			<version>0.9.1</version>
 		</dependency>
 		<dependency>
-			<groupId>javax.mail</groupId>
-			<artifactId>mail</artifactId>
-			<version>1.4.1</version>
-		</dependency>
-		<!--
-		<dependency>
-			<groupId>org.eclipse</groupId>
-			<artifactId>swt</artifactId>
-			<version>3.3.0-v3346</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.swt.carbon</groupId>
-			<artifactId>macosx</artifactId>
-			<version>3.3.0-v3346</version>
-		</dependency>
-		-->
-		<dependency>
 			<groupId>org.xhtmlrenderer</groupId>
 			<artifactId>xhtmlrenderer</artifactId>
 			<version>1.0</version>

@@ -29,9 +29,6 @@ import java.lang.reflect.Method;
 
 import javax.swing.JComponent;
 
-import org.aopalliance.intercept.MethodInterceptor;
-import org.aopalliance.intercept.MethodInvocation;
-import org.springframework.aop.framework.ProxyFactory;
 import org.squidy.designer.component.CropScroll;
 import org.squidy.designer.shape.ZoomShape;
 

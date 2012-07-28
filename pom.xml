@@ -18,14 +18,6 @@
 	<name>Squidy Interaction Library</name>
 	<description>Squidy is an interaction library which eases the design of natural user interfaces (also known as &quot;post-WIMP interfaces&quot;) by unifying various device drivers, frameworks and tracking toolkits in a common library and providing a central and easy-to-use visual design environment. Squidy offers diverse input modalities such as multi-touch input, pen interaction, speech recognition, laser pointer-, eye- and gesture-tracking. The visual user interface hides the complexity of the technical implementation from the user by providing a simple visual language based on high-level visual data flow programming combined with zoomable user interface concepts. Furthermore, Squidy offers a collection of ready-to-use devices, signal processing filters and interaction techniques. The trade-off between functionality and simplicity of the user interface is especially addressed by utilizing the concept of semantic zooming which enables dynamic access to more advanced functionality on demand. Thus, developers as well as interaction designers are able to adjust the complexity of the Squidy user interface to their current need and knowledge. The interaction library Squidy was developed in course of the research project inteHRDis - Interaction Techniques for High Resolution Displays.</description>
 	<url>http://www.squidy-lib.de</url>
-	<issueManagement>
-		<system>JIRA</system>
-		<url>http://jira.squidy-lib.de</url>
-	</issueManagement>
-	<ciManagement>
-		<system>bamboo</system>
-		<url>http://bamboo.squidy-lib.de</url>
-	</ciManagement>
 	<inceptionYear>2007</inceptionYear>
 	<licenses>
         <license>
@@ -283,75 +275,26 @@
 			<version>4.4</version>
 		</dependency>
     	<dependency>
-      		<groupId>com.phidgets</groupId>
-      		<artifactId>phidget</artifactId>
-      		<version>2.1.5</version>
-    	</dependency>
-    	<dependency>
     		<groupId>org.mvel</groupId>
     		<artifactId>mvel2</artifactId>
     		<version>2.0.7</version>
     	</dependency>
-    	<!--
-    	<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-core</artifactId>
-    		<version>3.3.0.SP1</version>
-    	</dependency>
-    	<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-annotations</artifactId>
-    		<version>3.4.0.GA</version>
-    	</dependency>
-    	<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>ejb3-persistence</artifactId>
-    		<version>1.0.2.GA</version>
-    	</dependency>
-    	-->
-    	<dependency>
-    		<groupId>org.springframework</groupId>
-    		<artifactId>spring</artifactId>
-    		<version>2.5.6</version>
-    	</dependency>
-    	<dependency>
-    		<groupId>cglib</groupId>
-    		<artifactId>cglib</artifactId>
-    		<version>2.2</version>
-    	</dependency>
 	</dependencies>
 
-    <mailingLists>
-        <mailingList>
-            <name>Squidy User List</name>
-            <subscribe>https://lists.sourceforge.net/lists/listinfo/squidy-lib-users</subscribe>
-            <unsubscribe>https://lists.sourceforge.net/lists/listinfo/squidy-lib-users</unsubscribe>
-            <post>squidy-lib-users@lists.sourceforge.net</post>
-            <archive>http://sourceforge.net/mailarchive/forum.php?forum_name=squidy-lib-users</archive>
-        </mailingList>
-        <mailingList>
-            <name>Squidy Developer List</name>
-            <subscribe>https://lists.sourceforge.net/lists/listinfo/squidy-lib-developers</subscribe>
-            <unsubscribe>https://lists.sourceforge.net/lists/listinfo/squidy-lib-developers</unsubscribe>
-            <post>squidy-lib-developers@lists.sourceforge.net</post>
-            <archive>http://sourceforge.net/mailarchive/forum.php?forum_name=squidy-lib-developers</archive>
-        </mailingList>
-    </mailingLists>
-
 	<scm>
-		<connection>scm:svn:https://merkur61.inf.uni-konstanz.de/svn/core/trunk</connection>
-		<developerConnection>scm:svn:https://merkur61.inf.uni-konstanz.de/svn/core/trunk</developerConnection>
+		<connection>scm:git:https://github.com/raedle/Squidy.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:raedle/Squidy.git</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://merkur61.inf.uni-konstanz.de/svn/core/trunk</url>
+		<url>https://github.com/raedle/Squidy</url>
 	</scm>
 
 	<prerequisites>
-		<maven>2.1.0</maven>
+		<maven>3.0</maven>
 	</prerequisites>
 
 	<repositories>
 		<repository>
-			<id>hci-artifactory-releases</id>
+			<id>artifactory-releases</id>
 			<name>Squidy Interaction Library Maven Repository</name>
 			<url>http://134.34.205.137/repo</url>
 			<releases>

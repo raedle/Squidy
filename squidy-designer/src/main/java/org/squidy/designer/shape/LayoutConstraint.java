@@ -33,7 +33,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.XmlType;
 
-import org.mvel2.MVEL;
 import org.squidy.database.RemoteUpdatable;
 import org.squidy.database.RemoteUpdatablePool;
 import org.squidy.database.RemoteUpdatableSessionProvider;
