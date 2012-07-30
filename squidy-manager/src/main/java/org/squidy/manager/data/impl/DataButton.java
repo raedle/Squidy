@@ -106,7 +106,7 @@ public class DataButton<T extends DataButton> extends DataDigital<T> {
 	 */
 	public T getClone() {
 		T clone = super.getClone();
-		clone.buttonType = buttonType;
+		clone.setButtonType(buttonType);
 		
 		return clone;
 	}

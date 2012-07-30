@@ -97,17 +97,17 @@ public class DataPosition6D<T extends DataPosition6D> extends DataPosition3D<T> 
 
 	public T getClone() {
 		T clone = super.getClone();
-		clone.m00 = m00;
-		clone.m01 = m01;
-		clone.m02 = m02;
-		clone.m10 = m10;
-		clone.m11 = m11;
-		clone.m12 = m12;
-		clone.m20 = m20;
-		clone.m21 = m21;
-		clone.m22 = m22;
-		clone.yaw = yaw;
-		clone.pitch = pitch;
+		clone.setM00(m00);
+		clone.setM01(m01);
+		clone.setM02(m02);
+		clone.setM10(m10);
+		clone.setM11(m11);
+		clone.setM12(m12);
+		clone.setM20(m20);
+		clone.setM21(m21);
+		clone.setM22(m22);
+		clone.setYaw(yaw);
+		clone.setPitch(pitch);
 		
 		return clone;
 	}
