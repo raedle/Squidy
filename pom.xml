@@ -296,7 +296,7 @@
 		<repository>
 			<id>artifactory-releases</id>
 			<name>Squidy Interaction Library Maven Repository</name>
-			<url>http://134.34.205.137/repo</url>
+			<url>http://artifactory.squidy-lib.de/repo</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -324,7 +324,7 @@
 		<repository>
 			<id>squidy-libs-releases</id>
 			<name>Squidy Interaction Library Maven Repository Releases</name>
-			<url>http://134.34.205.137/libs-release-local</url>
+			<url>http://artifactory.squidy-lib.de/libs-release-local</url>
 		</repository>
 	</distributionManagement>
 
