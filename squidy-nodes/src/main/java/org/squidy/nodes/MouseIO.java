@@ -45,6 +45,7 @@ import org.squidy.SquidyException;
 import org.squidy.designer.util.InputWindow;
 import org.squidy.manager.controls.CheckBox;
 import org.squidy.manager.controls.TextField;
+import org.squidy.manager.data.DataConstant;
 import org.squidy.manager.data.IData;
 import org.squidy.manager.data.Processor;
 import org.squidy.manager.data.Property;
@@ -83,6 +84,8 @@ public class MouseIO extends AbstractNode {
 	private static final boolean isWindows = System.getProperty("os.name").startsWith("Windows");
 	private InputWindow inputWindow;
 	private CDirectInputMouse cdim;
+	
+	public static final DataConstant CLICK_COUNT = DataConstant.get(Integer.class, "CLICK_COUNT");
 
 	// ################################################################################
 	// BEGIN OF ADJUSTABLES

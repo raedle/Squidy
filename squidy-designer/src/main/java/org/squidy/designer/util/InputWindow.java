@@ -74,6 +74,8 @@ public class InputWindow extends JFrame {
 	private static InputWindow instance = null;
 	private List<AbstractNode> registeredMouse = new ArrayList<AbstractNode>();
 	private List<AbstractNode> registeredKeyboard = new ArrayList<AbstractNode>();
+	
+	public static final DataConstant CLICK_COUNT = DataConstant.get(Integer.class, "CLICK_COUNT");
 
 	private InputWindow() {
 		super("Squidy Input Window");
@@ -169,13 +171,13 @@ public class InputWindow extends JFrame {
 		text.addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
 				if (SwingUtilities.isLeftMouseButton(e)) {
-					pushSampleButton(1, true);
+					pushSampleButton(1, true, e.getClickCount());
 				} else {
 					if (SwingUtilities.isMiddleMouseButton(e)) {
-						pushSampleButton(2, true);
+						pushSampleButton(2, true, e.getClickCount());
 					} else {
 						if (SwingUtilities.isRightMouseButton(e)) {
-							pushSampleButton(3, true);
+							pushSampleButton(3, true, e.getClickCount());
 						}
 					}
 				}
@@ -183,13 +185,13 @@ public class InputWindow extends JFrame {
 
 			public void mouseReleased(MouseEvent e) {
 				if (SwingUtilities.isLeftMouseButton(e)) {
-					pushSampleButton(1, false);
+					pushSampleButton(1, false, e.getClickCount());
 				} else {
 					if (SwingUtilities.isMiddleMouseButton(e)) {
-						pushSampleButton(2, false);
+						pushSampleButton(2, false, e.getClickCount());
 					} else {
 						if (SwingUtilities.isRightMouseButton(e)) {
-							pushSampleButton(3, false);
+							pushSampleButton(3, false, e.getClickCount());
 						}
 					}
 				}
@@ -249,12 +251,13 @@ public class InputWindow extends JFrame {
 		}
 	}
 
-	private void pushSampleButton(int type, boolean flag) {
+	private void pushSampleButton(int type, boolean flag, int clickCount) {
 		DataButton button = null;
 		AbstractNode node = null;
 		for(ListIterator<AbstractNode> it = registeredMouse.listIterator(); it.hasNext();){
 	    	node = it.next();
 	    	button = new DataButton(node.getClass(), type, flag);
+	    	button.setAttribute(CLICK_COUNT, clickCount);
 			node.publish(button);
 	    }
 	}

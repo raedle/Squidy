@@ -70,6 +70,7 @@ import org.squidy.manager.model.AbstractNode;
 	tags = { },
 	status = Status.UNSTABLE
 )
+@Deprecated
 public class Doubleclick extends AbstractNode {
 
 	// ################################################################################

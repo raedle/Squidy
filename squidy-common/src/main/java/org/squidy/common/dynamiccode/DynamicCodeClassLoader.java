@@ -48,7 +48,7 @@ import org.squidy.SquidyException;
  * Time: 7:19:03 PM
  * </pre>
  * 
- * @author Roman R&amp;aumldle <a href="mailto:Roman.Raedle@uni-konstanz.de">Roman .Raedle@uni-konstanz.de</a>
+ * @author Roman Rädle <a href="mailto:Roman.Raedle@uni-konstanz.de">Roman.Raedle@uni-konstanz.de</a>
  *         Human-Computer Interaction Group University of Konstanz
  * @version $Id: DynamicCodeClassLoader.java 772 2011-09-16 15:39:44Z raedle $
  * @since 1.0.0

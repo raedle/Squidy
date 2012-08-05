@@ -6,7 +6,7 @@
 	<groupId>org.squidy</groupId>
 	<artifactId>squidy</artifactId>
 	<packaging>pom</packaging>
-	<version>1.5.0-SNAPSHOT</version>
+	<version>1.5.1-SNAPSHOT</version>
 	<modules>
 		<module>squidy-common</module>
 		<module>squidy-manager</module>
