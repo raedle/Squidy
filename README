@@ -4,6 +4,8 @@ Squidy is an open-source interaction library that unifies various device drivers
 
 ####### BUILD and RUN #######
 
+!!! The build does not work anymore since we had to shutdown our Maven package server !!! Use the binaries v. 1.1.0 for now.
+
 To build a Squidy binary install Apache Maven and run the following command in Squidy checkout directory:
 
 $> mvn package -Dmaven.test.skip=true -P assembly
