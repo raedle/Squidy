@@ -22,7 +22,7 @@ Squidy UI Design:
 
 ### Source Code View ###
 
-![Image of Source Code](https://raw.githubusercontent.com/raedle/Squidy/master/images/source-code.jpg)
+![Image of Source Code](images/source-code.jpg)
 
 ## BUILD and RUN ##
 
