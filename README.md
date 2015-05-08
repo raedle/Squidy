@@ -6,19 +6,19 @@ Squidy UI Design:
 
 ### Pipeline View ###
 
-![Image of Pipeline](https://raw.githubusercontent.com/raedle/Squidy/master/images/pipeline.jpg)
+![Image of Pipeline](images/pipeline.jpg)
 
 ### Properties View ###
 
-![Image of Properties](https://raw.githubusercontent.com/raedle/Squidy/master/images/properties.jpg)
+![Image of Properties](images/properties.jpg)
 
 ### Description View ###
 
-![Image of Description](https://raw.githubusercontent.com/raedle/Squidy/master/images/description.jpg)
+![Image of Description](images/description.jpg)
 
 ### Data Visualization View ###
 
-![Image of Data Visualization](https://raw.githubusercontent.com/raedle/Squidy/master/images/data-visualization.jpg)
+![Image of Data Visualization](images/data-visualization.jpg)
 
 ### Source Code View ###
 
