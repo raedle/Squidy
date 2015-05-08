@@ -1,8 +1,30 @@
-###### Squidy IS A RESEARCH PROJECT ######
+# Squidy IS A RESEARCH PROJECT #
 
 Squidy is an open-source interaction library that unifies various device drivers and toolkits by integrating those in a homogeneous design environment. The project was initiated at the Human-Computer Interaction Group at the University of Konstanz and published under the LGPLv3 open-source license. Please consider that Squidy is a prototype and not mentioned to be a product. If you have any questions concerning Squidy, the source code, Squidy runtime, etc. feel free to contact the authors e.g. [Roman (dot) Raedle (at) uni-konstanz (dot) de]. We will try our best to help solving your problems.
 
-####### BUILD and RUN #######
+Squidy UI Design:
+
+### Pipeline View ###
+
+![Image of Pipeline](images/pipeline.jpg)
+
+### Properties View ###
+
+![Image of Properties](images/properties.jpg)
+
+### Description View ###
+
+![Image of Description](images/description.jpg)
+
+### Data Visualization View ###
+
+![Image of Data Visualization](images/data-visualization.jpg)
+
+### Source Code View ###
+
+![Image of Source Code](images/source-code.jpg)
+
+## BUILD and RUN ##
 
 !!! The build does not work anymore since we had to shutdown our Maven package server !!! Use the binaries v. 1.1.0 for now.
 
