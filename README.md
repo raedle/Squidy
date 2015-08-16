@@ -2,8 +2,9 @@
 
 Squidy is an open-source interaction library that unifies various device drivers and toolkits by integrating those in a homogeneous design environment. The project was initiated at the Human-Computer Interaction Group at the University of Konstanz and published under the LGPLv3 open-source license. Please consider that Squidy is a prototype and not mentioned to be a product. If you have any questions concerning Squidy, the source code, Squidy runtime, etc. feel free to contact the authors e.g. [Roman (dot) Raedle (at) uni-konstanz (dot) de]. We will try our best to help solving your problems.
 
-### Video about Squidy ###
+### Videos about Squidy ###
 
+https://www.youtube.com/watch?v=X-Kz9FGTbj0
 https://www.youtube.com/watch?v=_7Afy9cQNlA
 
 Squidy UI Design:
