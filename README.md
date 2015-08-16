@@ -5,6 +5,7 @@ Squidy is an open-source interaction library that unifies various device drivers
 ### Videos about Squidy ###
 
 https://www.youtube.com/watch?v=X-Kz9FGTbj0
+
 https://www.youtube.com/watch?v=_7Afy9cQNlA
 
 Squidy UI Design:
